@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+	<meta charset="utf-8">
+	<title>Blog : Taller de Ajedrez</title>
+	<link rel="stylesheet" href="../estilos.css">
+	<link rel="stylesheet" href="../menu.css">
+	<script type="text/javascript" src="../jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="funciones2.js"></script>
+</head>
+<body>
+
+	<div id="contenedor">
+		<header>
+			<div id="logo">
+				<a href="index.html"><img src="../images/Logo.png" alt="Logo"><span>Blog</span></a>
+			</div>
+			<nav>
+				<ul id="menu">
+					<li><a href="../index.html">Principal</a></li>
+					<li id="uno"><a href="#">Partidas</a>
+						<ul id="submenu1">
+							<!-- Ver funciones1.js -->
+						</ul>
+					</li>
+					<li><a href="../frases.html">Frases</a></li>
+					<li id="dos"><a href="#">Fotos</a>
+						<ul id="submenu2">
+							<!-- Ver funciones1.js -->						
+						</ul>
+					</li>
+					<li><a href="../contacto.html">Contacto</a></li>
+					<li><a href="../about.html">Acerca de</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<div id="blog">
+				<a href="partidas-amistosas.html" class="linkblog"><h1>Partidas Amistosas</h1></a>
+				<p>
+					Muchas son las ocasiones en las que se pueden jugar partidas amistosas de ajedrez: entre ronda y ronda de un torneo, antes o después de un torneo, en casa, en la plaza, en el tren, y un largo etcétera... (<a href="partidas-amistosas.html" class="linkblog">Seguir leyendo</a>)
+				</p>
+				<br>
+				<a href="partida-tringov-fischer-habana-1965-teletipo.html" class="linkblog"><h1>Partida Tringov - Fischer</h1></a>
+				<p>
+					Tringov - Fischer, Capablanca Memorial (1965): Esta partida tiene una curiosa historia, se jugó por teletipo ya que las autoridades de Estados Unidos no le permitieron a Fischer viajar a La Habana a jugar el torneo... (<a href="partida-tringov-fischer-habana-1965-teletipo.html" class="linkblog">Seguir leyendo</a>)
+				</p>
+			</div>
+			<aside>
+				<img src="../images/icons/32/calendar.png" alt="Archivo">
+				<h2>Archivo</h2>
+				<br>
+				<select name="meses" onchange="location = this.value">
+					<option value="index.html">Seleccionar mes...</option>
+					<option value="Febrero2017.html">Febrero 2017 (2)</option>
+				</select>
+			</aside>	
+		</section>
+		<footer>
+			<div id="visitantes">
+				<!-- Contador de visitantes -->
+				<script type="text/javascript" src="http://counter2.01counter.com/private/countertab.js?c=be4b9f4bcd75740768a0f6dbee8e72cf"></script> <br>visitantes
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

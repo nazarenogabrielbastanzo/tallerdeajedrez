@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+	<meta charset="utf-8">
+	<title>Partidas de Internet : Taller de Ajedrez</title>
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="menu.css">
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="funciones1.js"></script>
+	<script src="angular.js"></script>
+	<script src="internet.js"></script>
+</head>
+<body>
+<div id="contenedor">
+		<header>
+			<div id="logo">
+				<a href="index.html"><img src="images/Logo.png" alt="Logo"></a>
+			</div>
+			<nav>
+				<ul id="menu">
+					<li class="menu"><a href="index.html">Principal</a></li>
+					<li id="uno" class="menu"><a href="#">Partidas</a>
+						<ul id="submenu1">
+							<!-- Ver funciones1.js -->
+						</ul>
+					</li>
+					<li class="menu"><a href="frases.html">Frases</a></li>
+					<li id="dos" class="menu"><a href="#">Fotos</a>
+						<ul id="submenu2">
+							<!-- Ver funciones1.js -->						
+						</ul>
+					</li>
+					<li class="menu"><a href="contacto.html">Contacto</a></li>
+					<li class="menu"><a href="about.html">Acerca de</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<aside id="noindex">
+				<!--ver funciones1.js-->
+			</aside>
+			<article id="partidas_deInternet" data-ng-app="myApp" data-ng-controller="partidasInternet">
+				<img src="images/icons/32/trophy.png" alt="Partidas de Internet">
+				<h1>Partidas de Internet</h1>
+			   	<p>Clic en las cabeceras de la tabla para cambiar el orden en que aparecen las partidas:</p>
+			   	<table>
+			   		<th data-ng-click="orderByMe('blancas')">Blancas</th>
+			   		<th data-ng-click="orderByMe('negras')">Negras</th>
+			   		<th data-ng-click="orderByMe('resultado')">Resultado</th>
+			   		<th data-ng-click="orderByMe('anio')">Año</th>
+			   		<th id="novinculos">Link</th>
+			   		<tr data-ng-repeat="x in partidas | orderBy:myOrderBy">
+			   			<td>{{x.blancas}}</td>
+			   			<td>{{x.negras}}</td>
+			   			<td>{{x.resultado}}</td>
+			   			<td>{{x.anio}}</td>
+			   			<td><a data-ng-href="{{x.vinculo}}">Clic aquí</a></td>
+			   		</tr>
+			   	</table>
+			</article>
+		</section>
+		<footer>
+			<div id="visitantes">
+				<!-- Contador de visitantes -->
+				<script type="text/javascript" src="http://counter2.01counter.com/private/countertab.js?c=be4b9f4bcd75740768a0f6dbee8e72cf"></script> <br>visitantes
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

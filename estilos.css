@@ -1,0 +1,298 @@
+@import 'https://fonts.googleapis.com/css?family=Tangerine';
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	text-align: center;
+	background-color: #99D9EA;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	top: 0;
+}
+
+header a {
+	text-decoration: none;
+}
+
+header span {
+	display: inline-block;
+	transform: rotate(-30deg) translate(10px, -15px);
+	color: green;
+}
+
+section {
+	position: relative;
+	top: 120px;
+	line-height: 1.5;
+}
+
+#bienvenidos {
+	margin: 10px; padding: 10px;
+	float: left;
+	width: 65%;
+}
+
+h1, h2 {
+	display: inline;
+	color: #469;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+#fotoAside1 {
+	width: 315px;
+	border-radius: 15px;
+}
+
+aside {
+	float: right;
+	width: 315px;
+	margin: 10px; padding: 10px;
+	border: 1px solid blue;
+	border-radius: 15px;
+	text-align: justify-all;
+	position: fixed;
+	top: 130px;
+	left: 1000px;
+}
+
+article {
+	clear: left;
+	border: 1px solid blue;
+	border-radius: 15px;
+	margin: 10px; padding: 10px;
+	width: 70%;
+}
+
+#partidas, #frases, #fotos, #contacto {
+	transition: background-color 500ms;
+}
+
+#partidas_amistosas, #partidas_deTorneo, #partidas_deGM, #partidas_deInternet #fotos_seleccionadas, #fotos_Torneo2daCatCampana {
+	transition: background-color 1000ms;
+}
+
+a {
+	color: #469;
+	text-decoration: underline;
+}
+
+footer {
+	clear: both;
+	position: relative;
+	top: 120px;
+	background-color: white;
+	text-align: center;
+	margin: 10px; padding: 10px;
+}
+
+#partidas div {
+	border: 1px solid blue;
+	border-radius: 15px;
+	width: 200px;
+	margin: 10px; padding: 10px;
+	text-align: center;
+}
+
+#partidas_amistosas div {
+	border: 1px solid blue;
+	border-radius: 15px;
+	width: 200px;
+	margin: 10px; padding: 10px;
+	text-align: center;
+}
+
+#partidas_deTorneo div {
+	border: 1px solid blue;
+	border-radius: 15px;
+	width: 200px;
+	margin: 10px; padding: 10px;
+	text-align: center;
+}
+
+#partidas_deGM div {
+	border: 1px solid blue;
+	border-radius: 15px;
+	width: 200px;
+	margin: 10px; padding: 10px;
+	text-align: center;
+}
+
+#partidas_deInternet div {
+	border: 1px solid blue;
+	border-radius: 15px;
+	width: 200px;
+	margin: 10px; padding: 10px;
+	text-align: center;
+}
+/*
+#fotos div {
+	border: 1px solid blue;
+	border-radius: 15px;
+	width: 200px;
+	margin: 10px; padding: 10px;
+	text-align: center;
+}
+*/
+#nombre {
+	border: 1px solid blue;
+	border-radius: 5px;
+	width: 250px;
+	height: 25px;
+	font-size: 15px;
+	padding: 10px;
+	transition: width 500ms, background-color 1000ms;
+}
+
+#nombre:focus {
+	width: 350px;
+	background-color: rgba(212,185,108,0.8);
+
+}
+
+#email {
+	border: 1px solid blue;
+	border-radius: 5px;
+	width: 250px;
+	height: 25px;
+	font-size: 15px;
+	padding: 10px;
+	transition: width 500ms, background-color 1000ms;
+}
+
+#email:focus {
+	width: 350px;
+	background-color: rgba(212,185,108,0.8);
+}
+
+#comentarios {
+	border: 1px solid blue;
+	border-radius: 5px;
+	font-size: 15px;
+	font-family: sans-serif;
+	padding: 10px;
+	width: 250px;
+	height: 150px;
+	transition: width 500ms, background-color 1000ms;
+}
+
+#comentarios:focus {
+	width: 350px;
+	background-color: rgba(212,185,108,0.8);
+}
+
+#enviar {
+	height: 25px;
+	width: 100px;
+	background-color: lightblue;
+	color: blue;
+	font-weight: bold;
+}
+
+#cancelar {
+	height: 25px;
+	width: 100px;
+	background-color: lightblue;
+	color: blue;
+	font-weight: bold;
+}
+
+li {
+	list-style-type: circle;
+}
+
+.frase {
+	font-family: 'Tangerine', cursive;
+	font-size: 40px;
+}
+
+table, th, tr, td {
+	border: 1px solid lightGray;
+	border-collapse: collapse;
+	padding: 15px;
+}
+
+table {
+	width: 100%;
+}
+
+th {
+	cursor: pointer;
+	background-color: rgba(212,185,108,0.8);
+}
+
+tr:hover {
+	background-color: rgba(212,185,108,0.5);
+}
+
+#novinculos:hover {
+	cursor: not-allowed;
+}
+
+img[alt="Facebook"], img[alt="Twitter"] {
+	float: left;
+}
+
+span[id="facebook"], span[id="twitter"] {
+	line-height: 32px;
+}
+
+#visitantes {
+	text-align: center;
+	border: 1px solid blue;
+	border-radius: 15px;
+	margin: 10px auto; padding: 10px;
+	width: 25%;
+}
+
+.linkblog {
+	text-decoration: none;
+}
+
+.linkblog:hover {
+	text-decoration: underline;
+}
+
+.imagenblog {
+	display: block;
+	margin: auto;
+}
+
+#blog {
+	margin: 10px; padding: 10px;
+	float: left;
+	width: 65%;
+	font-size: 20px;
+	text-align: justify;	
+}
+
+.redactor {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.entrevistado {
+	font-style: italic;
+}
+
+#blog img {
+	margin: 10px;
+}
+
+#mail {
+	color: #469;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+#at {
+	color: green;
+	font-weight: bold;
+	font-style: normal;
+}

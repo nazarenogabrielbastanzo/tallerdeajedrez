@@ -1,0 +1,19 @@
+button {
+	color: blue;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#botones {
+	text-align: center;
+}
+
+#galeria {
+	text-align: center;
+}
+
+#galeria img {
+	width: 650px;
+	height: 450px;
+	border-radius: 10px;
+}

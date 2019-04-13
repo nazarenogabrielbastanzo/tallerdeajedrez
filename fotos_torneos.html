@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+	<meta charset="utf-8">
+	<title>Fotos de Torneos : Taller de Ajedrez</title>
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="menu.css">
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="funciones1.js"></script>
+	<script src="angular.js"></script>
+	<script src="fotostorneos.js"></script>
+</head>
+<body>
+
+	<div id="contenedor">
+		<header>
+			<div id="logo">
+				<a href="index.html"><img src="images/Logo.png" alt="Logo"></a>
+			</div>
+			<nav>
+				<ul id="menu">
+					<li class="menu"><a href="index.html">Principal</a></li>
+					<li id="uno" class="menu"><a href="#">Partidas</a>
+						<ul id="submenu1">
+							<!-- Ver funciones1.js -->
+						</ul>
+					</li>
+					<li class="menu"><a href="frases.html">Frases</a></li>
+					<li id="dos" class="menu"><a href="#">Fotos</a>
+						<ul id="submenu2">
+							<!-- Ver funciones1.js -->						
+						</ul>
+					</li>
+					<li class="menu"><a href="contacto.html">Contacto</a></li>
+					<li class="menu"><a href="about.html">Acerca de</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<aside id="noindex">
+				<!--ver funciones1.js-->
+			</aside>
+			<article id="fotos" data-ng-app="myApp" data-ng-controller="fotosTorneos">
+				<img src="images/icons/32/camera.png" alt="Fotos">
+				<h1>Fotos de Torneos</h1>
+				<br>
+			   	<p>Clic en las cabeceras de la tabla, para cambiar el orden en que aparecen las galerías de fotos.</p>
+			   	<table>
+			   		<th data-ng-click="orderByMe('torneo')">Torneo</th>
+			   		<th data-ng-click="orderByMe('lugar')">Lugar</th>
+			   		<th data-ng-click="orderByMe('fecha')">Fecha</th>
+			   		<th id="novinculos">Link</th>
+			   		<tr data-ng-repeat="x in fotos | orderBy:myOrderBy">
+			   			<td>{{x.torneo}}</td>
+			   			<td>{{x.lugar}}</td>
+			   			<td>{{x.fecha}}</td>
+			   			<td><a data-ng-href="{{x.vinculo}}">Clic aquí</a></td>
+			   		</tr>
+			   	</table>
+			</article>
+		</section>
+		<footer>
+			<div id="visitantes">
+				<!-- Contador de visitantes -->
+				<script type="text/javascript" src="http://counter2.01counter.com/private/countertab.js?c=be4b9f4bcd75740768a0f6dbee8e72cf"></script> <br>visitantes
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
