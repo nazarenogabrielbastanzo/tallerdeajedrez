@@ -85,7 +85,7 @@ CREATE TABLE IF NOT EXISTS `partidas` (
 --
 
 INSERT INTO `partidas` (`partida_id`, `blancas`, `negras`, `resultado`, `fecha`, `evento`, `vinculo`, `partida_categoria`, `meGusta`) VALUES
-(1, 'Bastanzo, Jorge Raúl', 'Carlos', '1 - 0', '??/??/1980', 'Partida Amistosa', 'https://lichess.org/embed/oaaGWMMu', 'amistosas', NULL),
+(1, 'Bastanzo, Jorge Raúl', 'Carlos', '1 - 0', '??/??/1980', 'Partida Amistosa', 'https://lichess.org/embed/oaaGWMMu', 'amistosas', 1),
 (2, 'Bastanzo, Jorge Raúl', '?', '1 - 0', '??/??/1984', 'Partida Amistosa', 'https://lichess.org/embed/gsJ8wEuF', 'amistosas', NULL),
 (8, 'Hikaru Nakamura', 'Garry Kasparov', '1/2 - 1/2', '14/08/2017', 'St. Louis Rapid & Blitz (Rapid)', 'https://lichess.org/embed/dlg3JZ6Q', 'kasparov', NULL),
 (9, 'Garry Kasparov', 'Leinier Dominguez Perez', '1/2 - 1/2', '14/08/2017', 'St. Louis Rapid & Blitz (Rapid)', 'https://lichess.org/embed/mjryatxu', 'kasparov', NULL),
