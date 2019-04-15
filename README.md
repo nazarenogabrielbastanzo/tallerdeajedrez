@@ -1,2 +1,2 @@
-# Taller de Ajedrez
+# Taller de Ajedrez (Versión Actual)
 https://tallerdeajedrez.com.ar
