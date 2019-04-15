@@ -6,6 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title><?= $titulo ?></title>
+	<link rel="shortcut icon" href="<?php echo base_url('assets/img/favicon.ico'); ?>" type="image/x-icon">
 	
 	<?php // Required meta tag for Bootstrap ?>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
