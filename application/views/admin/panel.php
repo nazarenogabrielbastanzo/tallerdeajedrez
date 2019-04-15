@@ -7,7 +7,7 @@ if ( $_POST ){
   @ $response_recaptcha = $_POST['g-recaptcha-response'];
   //echo $response_recaptcha;
   if (isset($response_recaptcha) && $response_recaptcha){
-      $secret = "6LdgZ2AUAAAAACpfdFEe-cHcE4LvP_XB_aAal_fH";
+      $secret = "6LdVVJ4UAAAAAIKBcgm4TQ4uGNnjdE4zW4rxRVcf";
       $ip = $_SERVER['REMOTE_ADDR'];
       $validation_server = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response_recaptcha&remoteip=$ip");
       if ($validation_server){
