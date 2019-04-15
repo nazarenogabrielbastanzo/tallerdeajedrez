@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 15-04-2019 a las 05:58:27
+-- Tiempo de generación: 15-04-2019 a las 15:05:10
 -- Versión del servidor: 5.7.23
 -- Versión de PHP: 7.2.10
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `tallerdeajedrez_vactual`
+-- Base de datos: `tallerdeajedrez_actual`
 --
 
 -- --------------------------------------------------------
@@ -56,6 +56,22 @@ INSERT INTO `albums` (`album_id`, `album`, `lugar`, `fecha`) VALUES
 (12, 'IX Torneo Abierto en Memoria de Jorge Adelman (2da., 3er. y 4ta. rondas)', 'Belén de Escobar, Buenos Aires, Argentina', '05/02/2011'),
 (13, 'IX Torneo Abierto en Memoria de Jorge Adelman (5ta., 6ta. y 7ma. rondas)', 'Belén de Escobar, Buenos Aires, Argentina', '06/02/2011'),
 (14, 'Villa Martelli (Con la visita de Judith Polgar)', 'Villa Martelli, Buenos Aires, Argentina', '11/06/2011');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `files`
+--
+
+DROP TABLE IF EXISTS `files`;
+CREATE TABLE IF NOT EXISTS `files` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `file_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 

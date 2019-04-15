@@ -22,7 +22,7 @@ $this->load->view('header_view');
                             <label for="password">Password</label>
                             <input type="password" class="form-control" id="password" name="password" placeholder="Password...">
                         </div>
-                        <div class="g-recaptcha" data-sitekey="<serial_del_sitio><?php // Reemplazar por datos reales ?>" style="margin-bottom: 15px;"></div>
+                        <div class="g-recaptcha" data-sitekey="6LdgZ2AUAAAAAMNVpH5OrhPZA6NQYTh8zGJbGqmh" style="margin-bottom: 15px;"></div>
                         <button type="submit" class="btn btn-primary" id="enviar">Entrar</button>
                         <button type="reset" class="btn btn-secondary" id="cancelar">Cancelar</button>
                     </form>

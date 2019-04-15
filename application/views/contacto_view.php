@@ -10,7 +10,7 @@ if($_POST) {
     @ $response_recaptcha = $_POST['g-recaptcha-response'];
     //echo $response_recaptcha;
     if (isset($response_recaptcha) && $response_recaptcha) {
-        $secret = "<serial_secreto>"; // Reemplazar por datos reales
+        $secret = "6LdgZ2AUAAAAACpfdFEe-cHcE4LvP_XB_aAal_fH";
         $ip = $_SERVER['REMOTE_ADDR'];
         $validation_server = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response_recaptcha&remoteip=$ip");
         if ($validation_server) {
@@ -96,7 +96,7 @@ EOT;
         </div>
         <div class="form-group row justify-content-end">
             <div class="col-sm-10">
-            <div class="g-recaptcha" data-sitekey="<serial_del_sitio><?php // Reemplazar por datos reales ?>" style="margin-bottom: 15px;"></div>
+            <div class="g-recaptcha" data-sitekey="6LdgZ2AUAAAAAMNVpH5OrhPZA6NQYTh8zGJbGqmh" style="margin-bottom: 15px;"></div>
                 <button type="submit" class="btn btn-primary" id="enviar">Enviar</button>
                 <button type="reset" class="btn btn-primary">Cancelar</button>
             </div>
