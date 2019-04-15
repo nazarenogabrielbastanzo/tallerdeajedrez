@@ -20,7 +20,7 @@ if($_POST) {
             $mail->Port = 587;
             $mail->SMTPAuth = true;
             $mail->Username = 'info@tallerdeajedrez.com.ar';
-            $mail->Password = 'N424r3n0';
+            $mail->Password = 'N424r3n0@';
             $mail->setFrom('info@tallerdeajedrez.com.ar', 'Taller de Ajedrez');
             $mail->addAddress('info@tallerdeajedrez.com.ar', 'Taller de Ajedrez');
             if ($mail->addReplyTo($_POST['inputEmail'], $_POST['inputNombre'])) {
