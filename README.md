@@ -1,1 +1,1 @@
-# tallerdeajedrez-html
+# Taller de Ajedrez (2da. versión)
