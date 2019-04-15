@@ -19,6 +19,7 @@
 
 	<meta charset="utf-8">
 	<title>Taller de Ajedrez</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/estilo1.css" />
