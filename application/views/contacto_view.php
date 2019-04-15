@@ -16,7 +16,7 @@ if($_POST) {
         if ($validation_server) {
             $mail = new PHPMailer;
             $mail->isSMTP();
-            $mail->Host = 'mx1.hostinger.com';
+            $mail->Host = 'smtp.hostinger.com';
             $mail->Port = 587;
             $mail->SMTPAuth = true;
             $mail->Username = 'info@tallerdeajedrez.com.ar';
