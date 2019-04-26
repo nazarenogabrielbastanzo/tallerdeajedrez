@@ -27,8 +27,8 @@ $this->load->view('carousel_view');
 				<img class="card-img-top" src="<?= base_url('assets/img/Tringov_Fischer_Diagrama1.jpg'); ?>" alt="Card image cap" title="Ver mas...">
 			</div>
 			<div class="card-body">
-				<h4 class="card-title">Partida Tringov - Fischer</h4>
-				<p class="card-text">Tringov - Fischer, Capablanca Memorial (1965): Esta partida tiene una curiosa historia, se jugó por teletipo ya que las autoridades de Estados Unidos no le permitieron a Fischer viajar a La Habana a jugar el torneo...</p>
+				<h4 class="card-title">Partida Tringov vs. Fischer</h4>
+				<p class="card-text">Tringov vs. Fischer, Capablanca Memorial (1965): Esta partida tiene una curiosa historia, se jugó por teletipo ya que las autoridades de Estados Unidos no le permitieron a Fischer viajar a La Habana a jugar el torneo...</p>
 				<div class="text-center">
 					<div class="btn btn-outline-primary" onclick="location.href='<?= base_url('partida-tringov-fischer') ?>';">Seguir leyendo</div>
 				</div>

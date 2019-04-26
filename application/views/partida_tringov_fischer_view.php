@@ -7,7 +7,7 @@ $this->load->view('menu_view');
 <section class="container mt-3">
 	<article class="blog">
 		<h4><?php echo $current; ?></h4>
-		<p style="text-align: left;" class="articulo__descripcion">Tringov - Fischer, Capablanca Memorial (1965): Esta partida tiene una curiosa historia, se jugó por teletipo ya que las autoridades de Estados Unidos no le permitieron a Fischer viajar a La Habana a jugar el torneo... </p>
+		<p style="text-align: left;" class="articulo__descripcion">Tringov vs. Fischer, Capablanca Memorial (1965): Esta partida tiene una curiosa historia, se jugó por teletipo ya que las autoridades de Estados Unidos no le permitieron a Fischer viajar a La Habana a jugar el torneo... </p>
 		<div class="articulo__detalle"><p style="text-align: justify;">
 			era la época de la "guerra fría" entre las dos principales potencias mundiales, EEUU y la URSS. Este hecho hizo que las partidas duraran muchas horas, ya que las comunicaciones en esa época no eran tan eficientes; entre jugada y jugada había muchos minutos de espera, no sólo por la reflexión de los jugadores, sino además por el tiempo que insumía el proceso de enviarlas y recibir las respuestas. Durante la partida, la jugada 12...Ab4 de Fischer (ver Diagrama) </p>
 			<img src="<?= base_url('assets/img/Tringov_Fischer_Diagrama1.jpg'); ?>" alt="Diagrama 1" class="img-fluid rounded">
