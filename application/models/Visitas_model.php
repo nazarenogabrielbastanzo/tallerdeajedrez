@@ -3,9 +3,6 @@ class Visitas_model extends CI_Model
 {
   public function updateVisitas($visita)
   {
-    $datos = array(
-      'visitas' => $visita
-    );
     if ($this->db->query("UPDATE visitas SET visitas = '$visita'")) {
       return true;
     } else {

@@ -23,8 +23,8 @@ if (isset($_SESSION['admin'])):
         <div class="card-columns">
             <?php if(!empty($files)): foreach($files as $file): ?>
             <div class="card">
-                <a href="<?= base_url('uploads/files/'.$file['file_name']); ?>">
-                    <img src="<?php echo base_url('uploads/files/'.$file['file_name']); ?>" alt="" width="200">
+                <a href="<?= base_url('assets/img/tooltips/'.$file['file_name']); ?>">
+                    <img src="<?php echo base_url('assets/img/tooltips/'.$file['file_name']); ?>" alt="" width="200">
                     <p>Uploaded On <?php echo date("j M Y",strtotime($file['created'])); ?></p>
                 </a>
             </div>
