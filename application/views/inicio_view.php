@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 $this->load->view('header_view');
 $this->load->view('menu_view');
@@ -8,7 +8,8 @@ $this->load->view('carousel_view');
 </header>
 <section class="container-fluid mt-3">
 	<div class="card-columns">
-		<?php // Partidas Amistosas ?>
+		<?php
+		?>
 		<article class="card border-primary">
 			<div class="contenedor-imagen" onclick="location.href='<?= base_url('partidas-amistosas'); ?>';">
 				<img src="<?= base_url('assets/img/jorgeraulbastanzo.jpg'); ?>" alt="Card image cap" title="Ver mas...">
@@ -21,7 +22,8 @@ $this->load->view('carousel_view');
 				</div>
 			</div>
 		</article>
-		<?php // Partida Tringov-Fischer ?>
+		<?php
+		?>
 		<article class="card border-primary">
 			<div class="contenedor-imagen" onclick="location.href='<?= base_url('partida-tringov-fischer') ?>';">
 				<img class="card-img-top" src="<?= base_url('assets/img/Tringov_Fischer_Diagrama1.jpg'); ?>" alt="Card image cap" title="Ver mas...">
@@ -34,19 +36,23 @@ $this->load->view('carousel_view');
 				</div>
 			</div>
 		</article>
-		<?php // Taller de Ajedrez en Lichess ?>
+		<?php
+		?>
 		<article class="card border-primary">
 			<div class="card-body">
 				<h4 class="card-title">
 					Taller de Ajedrez en Lichess
 				</h4>
-				<script>lichess_widgets.profile_big("light", "tallerdeajedrez", "Mi Lichess");</script>
+				<script>
+					lichess_widgets.profile_big("light", "tallerdeajedrez", "Mi Lichess");
+				</script>
 			</div>
 		</article>
-		<?php // Funcionalidades ?>
+		<?php
+		?>
 		<article class="card border-primary">
 			<div class="contenedor-imagen" onclick="location.href='<?= base_url('funcionalidades'); ?>';">
-					<img src="<?= base_url('assets/img/screenshots'); ?>/captura.png" alt="Card image cap" title="Ver mas...">
+				<img src="<?= base_url('assets/img/screenshots'); ?>/captura.png" alt="Card image cap" title="Ver mas...">
 			</div>
 			<div class="card-body">
 				<h4 class="card-title">Funcionalidades</h4>
@@ -56,40 +62,55 @@ $this->load->view('carousel_view');
 				</div>
 			</div>
 		</article>
-		<?php // chess24 Noticias ?>
+		<?php
+		?>
 		<article class="card border-primary">
 			<div class="card-body">
 				<h4 class="card-title">chess24 Noticias</h4>
-<?php
-function feed($feedURL) {
-	$i = 0; 
-	$url = $feedURL; 
-	$rss = simplexml_load_file($url); 
-  foreach($rss->channel->item as $item) { 
-    $link = $item->link;  //extrae el link
-    $title = $item->title;  //extrae el titulo
-    $date = $item->pubDate;  //extrae la fecha
-    $date = date("d/m/Y", strtotime($date)); //convierte la fecha cruda en fecha legible
-		//$guid = $item->guid;  //extrae el link de la imagen
-    $description = strip_tags($item->description);  //extrae la descripcion
-    if (strlen($description) > 400) { //limita la descripcion a 400 caracteres
-    	$stringCut = substr($description, 0, 200);                   
-    	$description = substr($stringCut, 0, strrpos($stringCut, ' ')).'...';
-    }
-    if ($i < 3) { // extrae solo 3 items
-//    	echo '<div class="cuadros1"><h4><a href="'.$link.'" target="_blank">'.$title.'</a></h4><br><img src="'.$guid.'"><br>'.$description.'<br><div class="time">'.$date.'</div></div>';
-    	echo '<div><h6><a href="'.$link.'" target="_blank">'.$title.'</a></h6>'.$description.'<br><div class="time text-right">'.$date.'</div></div><br>';
-    }
-    $i++;
-  }
-  echo '<p class="text-center"><a href="https://chess24.com/es/informate/noticias" target="_blank">Más noticias de ajedrez en chess24</a></p>';
-	//echo '<div style="clear: both;"></div>';
-}
-?>	
-<?php feed("https://chess24.com/es/informate/noticias.rss"); ?>
+				<?php
+				function feed($feedURL)
+				{
+					$i = 0;
+					$url = $feedURL;
+					$rss = simplexml_load_file($url);
+					foreach ($rss->channel->item as $item) {
+						$link = $item->link;  //extrae el link
+						$title = $item->title;  //extrae el titulo
+						$date = $item->pubDate;  //extrae la fecha
+						$date = date("d/m/Y", strtotime($date)); //convierte la fecha cruda en fecha legible
+						//$guid = $item->guid;  //extrae el link de la imagen
+						$description = strip_tags($item->description);  //extrae la descripcion
+						if (strlen($description) > 400) { //limita la descripcion a 400 caracteres
+							$stringCut = substr($description, 0, 200);
+							$description = substr($stringCut, 0, strrpos($stringCut, ' ')) . '...';
+						}
+						if ($i < 3) { // extrae solo 3 items
+							//    	echo '<div class="cuadros1"><h4><a href="'.$link.'" target="_blank">'.$title.'</a></h4><br><img src="'.$guid.'"><br>'.$description.'<br><div class="time">'.$date.'</div></div>';
+							echo '<div><h6><a href="' . $link . '" target="_blank">' . $title . '</a></h6>' . $description . '<br><div class="time text-right">' . $date . '</div></div><br>';
+						}
+						$i++;
+					}
+					echo '<p class="text-center"><a href="https://chess24.com/es/informate/noticias" target="_blank">Más noticias de ajedrez en chess24</a></p>';
+					//echo '<div style="clear: both;"></div>';
+				}
+				?>
+				<?php feed("https://chess24.com/es/informate/noticias.rss"); ?>
 			</div>
 		</article>
-	</div><?php // div de cierre con class="card-columns" ?>
+		<article class="card border-primary">
+			<div class="card-body">
+				<div class="fb-page" data-href="https://www.facebook.com/TallerDeAjedrez/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+					<blockquote cite="https://www.facebook.com/TallerDeAjedrez/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/TallerDeAjedrez/">Taller de Ajedrez</a></blockquote>
+				</div>
+			</div>
+		</article>
+		<article class="card border-primary">
+			<div class="card-body">
+				<a class="twitter-timeline" data-height="750" data-theme="light" href="https://twitter.com/TallerdeAjedre2?ref_src=twsrc%5Etfw">Tweets by TallerdeAjedre2</a>
+				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+		</article>
+	</div>
 </section>
 <?php
 $this->load->view('footer_view')

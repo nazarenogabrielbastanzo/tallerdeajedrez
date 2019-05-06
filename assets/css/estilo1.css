@@ -5,6 +5,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #logotipo { color: #45A1FF; }
 i.tilde { color: lightgreen; font-size: 150%; margin: 10px; }
+i.fa-whatsapp { color: lightgreen; font-size: 150%; margin: 10px; }
 /*a { color: #9A9D90; }
 a:hover { outline: 1px solid #45A1FF; text-decoration: none; color: white;}
 body, .modal-content { background-color: #343A40; color: white; }*/
@@ -83,4 +84,9 @@ a.nav-link:hover {
     position: fixed;
     top: 500;
     right: 0;
+}
+@media only screen and (min-width: 736px) {
+    #compartirWhatsApp {
+        display: none;
+    }
 }

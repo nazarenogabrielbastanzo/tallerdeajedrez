@@ -44,3 +44,5 @@ $route['nuevo-album']['GET'] = 'upload_files';
 $route['nuevo-album']['POST'] = 'upload_files';
 
 $route['funcionalidades']['GET'] = 'home/funcionalidades';
+
+$route['politicas-de-privacidad']['GET'] = 'home/politicas_de_privacidad';

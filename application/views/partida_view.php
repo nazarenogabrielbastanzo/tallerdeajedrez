@@ -41,7 +41,7 @@ function quienGana($p) {
 			<div>
 				<?php // 21:9 aspect ratio ?>
 				<div class="embed-responsive embed-responsive-21by9">
-					<iframe class="embed-responsive-item" src="<?= $p['vinculo']; ?>">
+					<iframe class="embed-responsive-item" src="<?php echo "https://lichess.org/embed/{$p['vinculo']}"; ?>">
 						<p>Su navegador no soporta iframes...</p>
 					</iframe>
 				</div>

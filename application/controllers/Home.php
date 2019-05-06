@@ -187,4 +187,11 @@ class Home extends CI_Controller {
 		$this->load->view('funcionalidades', $datos);
 	}
 
+	public function politicas_de_privacidad()
+	{
+		$datos['titulo'] = 'Taller de Ajedrez - Políticas de Privacidad';
+		$datos['current'] = 'Politicas de Privacidad';
+		$this->load->view('politicas_de_privacidad_view', $datos);
+	}
+
 }

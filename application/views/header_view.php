@@ -1,58 +1,80 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="utf-8" />
 	<title><?= $titulo ?></title>
 	<link rel="shortcut icon" href="<?php echo base_url('favicon.ico'); ?>" type="image/x-icon">
 
-	
-	<?php // Required meta tag for Bootstrap ?>
+
+	<?php 
+	?>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<?php // Bootstrap CSS ?>
+	<?php 
+	?>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-	<?php // Fontawesome ?>
+	<?php 
+	?>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-	<?php // Estilos propios ?>
+	<?php 
+	?>
 	<link rel="stylesheet" href="<?= base_url('assets/css/estilo1.css'); ?>" />
 
-	<?php // Para el álbum ?>
+	<?php 
+	?>
 	<link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>" />
 
-	<?php // Para el widget de lichess ?>
+	<?php 
+	?>
 	<link rel="stylesheet" href="https://rubenwardy.com/lichess_widgets/lichess_widgets.css" />
-    <?php // For the light theme ?> <link rel="stylesheet" href="https://rubenwardy.com/lichess_widgets/light.css" />
-    <?php // For the dark theme <link rel="stylesheet" href="https://rubenwardy.com/lichess_widgets/dark.css" /> ?>
-    <script src="<?= base_url('assets/js/lichess_widgets.js') ?>"></script>
+	<?php 
+	?>
+	<link rel="stylesheet" href="https://rubenwardy.com/lichess_widgets/light.css" />
+	<?php 
+	?>
+	<script src="<?= base_url('assets/js/lichess_widgets.js') ?>"></script>
 
-<?php // Código de seguimiento de Google Analytics: ?>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108819279-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<?php 
+	?>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108819279-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-108819279-1');
-</script>
-<?php // :código de seguimiento de Google Analytics ?>
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
 
-<?php // reCaptcha ?>
-<script src='https://www.google.com/recaptcha/api.js'></script>
+		gtag('config', 'UA-108819279-1');
+	</script>
+	<?php 
+	?>
 
-<?php // Soporte HTML5 para navegadores antiguos: ?>
-<!--[if lt IE 9]>
+	<?php 
+	?>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+
+	<?php 
+	?>
+	<!--[if lt IE 9]>
 	<script src="<?php echo base_url('assets/js/html5shiv.js'); ?>"></script>
 <![endif]-->
-<?php // Soporte HTML5 para navegadores antiguos: ?>
+	<?php 
+	?>
 
-<?php // Dejar jQuery aquí arriba: ?>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<?php 
+	?>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 </head>
+
 <body>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.3&appId=1792091397779982&autoLogAppEvents=1"></script>
