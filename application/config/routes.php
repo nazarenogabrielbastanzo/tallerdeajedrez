@@ -40,9 +40,12 @@ $route['cerrar-sesion']['GET'] = 'home/close_session';
 $route['nueva-frase']['GET'] = 'home/nueva_frase_get';
 $route['nueva-frase']['POST'] = 'home/nueva_frase_post';
 
-$route['nuevo-album']['GET'] = 'upload_files';
-$route['nuevo-album']['POST'] = 'upload_files';
+/* $route['nuevo-album']['GET'] = 'upload_files';
+$route['nuevo-album']['POST'] = 'upload_files'; */
 
 $route['funcionalidades']['GET'] = 'home/funcionalidades';
 
 $route['politicas-de-privacidad']['GET'] = 'home/politicas_de_privacidad';
+
+/* $route['nuevo-album']['GET'] = 'upload_files/formulario';
+$route['nuevo-album']['POST'] = 'upload_files/formulario'; */

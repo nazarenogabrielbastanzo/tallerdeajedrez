@@ -1,8 +1,14 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-$visita = $this->VM->getVisitas()[0]['visitas'] + 1;
-$this->VM->updateVisitas($visita);
+
+if (isset($_GET['fbclid']) && !empty($_GET['fbclid'])) {
+  $vf = $this->VM->getVisitasFacebook()[0]['visitas_facebook'] + 1;
+  $this->VM->updateVisitasFacebook($vf);  
+} else {
+  $visita = $this->VM->getVisitas()[0]['visitas'] + 1;
+  $this->VM->updateVisitas($visita);
+}
 
 ?>
 

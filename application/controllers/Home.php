@@ -1,28 +1,29 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Home extends CI_Controller
+{
 
-  function __construct()
-  {
-	  parent::__construct();
-  }
+	function __construct()
+	{
+		parent::__construct();
+	}
 
 	public function index()
 	{
 		$datos['titulo'] = 'Taller de Ajedrez - Partidas - Fotos - Frases';
-    $datos['current'] = 'Inicio';
+		$datos['current'] = 'Inicio';
 		$this->load->view('inicio_view', $datos);
-  }
+	}
 
 	public function partidas_get($pagina)
 	{
 		$datos['titulo'] = 'Taller de Ajedrez - Partidas (Página ' . $pagina . ')';
-    $datos['current'] = 'Partidas';
+		$datos['current'] = 'Partidas';
 		$datos['partidas'] = $this->PM->getAll($pagina);
-    $datos['games'] = $this->PM->getAllGames();
+		$datos['games'] = $this->PM->getAllGames();
 		$datos['pagina'] = $pagina;
-		
+
 		// Para aclarar los rangos de cada página:
 		$totalPartidas = sizeof($datos['games']);
 		$cantidadPartidasPorPagina = sizeof($datos['partidas']);
@@ -38,28 +39,28 @@ class Home extends CI_Controller {
 		$datos['ultima'] = $ultima;
 		$datos['totalPartidas'] = $totalPartidas;
 		// :Para aclarar los rangos de cada página
-		
+
 		$this->load->view('partidas_view', $datos);
 	}
 
-  public function resultados_busqueda_get()
-  {
+	public function resultados_busqueda_get()
+	{
 		$datos['titulo'] = 'Taller de Ajedrez - Resultados de la Búsqueda';
 		$datos['current'] = 'Resultados de la Búsqueda';
-    $datos['resultadosPartidas'] = $this->BM->buscarPartidas();
-    $datos['resultadosFotos'] = $this->BM->buscarFotos();
-    $datos['resultadosFrases'] = $this->BM->buscarFrases();
-    $this->load->view('resultados-busqueda_view', $datos);
-  }
+		$datos['resultadosPartidas'] = $this->BM->buscarPartidas();
+		$datos['resultadosFotos'] = $this->BM->buscarFotos();
+		$datos['resultadosFrases'] = $this->BM->buscarFrases();
+		$this->load->view('resultados-busqueda_view', $datos);
+	}
 
 	public function fotos_get($pagina)
 	{
 		$datos['titulo'] = 'Taller de Ajedrez - Fotos';
-    $datos['current'] = 'Fotos';
+		$datos['current'] = 'Fotos';
 		$datos['fotos'] = $this->FM->getAll($pagina);
 		$datos['photos'] = $this->FM->getAllFotos();
 		$datos['pagina'] = $pagina;
-		
+
 		$totalAlbums = sizeof($datos['photos']);
 		$cantidadAlbumsPorPagina = sizeof($datos['fotos']);
 		$rango = $this->FM->getRango();
@@ -85,7 +86,7 @@ class Home extends CI_Controller {
 	public function dispositivos_get()
 	{
 		$datos['titulo'] = 'Taller de Ajedrez - Dispositivos';
-    $datos['current'] = 'Dispositivos';
+		$datos['current'] = 'Dispositivos';
 		$this->load->view('dispositivos_view', $datos);
 	}
 
@@ -94,14 +95,14 @@ class Home extends CI_Controller {
 		$datos['titulo'] = 'Taller de Ajedrez - Partida ' . $id;
 		$datos['current'] = 'Partida';
 		$datos['partida'] = $this->PM->getOne($id);
-    $datos['games'] = $this->PM->getAllGames();
+		$datos['games'] = $this->PM->getAllGames();
 		$this->load->view('partida_view', $datos);
 	}
 
 	public function album_get($id)
 	{
 		$datos['titulo'] = 'Taller de Ajedrez - Álbum';
-    $datos['current'] = 'Fotos';
+		$datos['current'] = 'Fotos';
 		$datos['album'] = $this->FM->getOne($id);
 		$this->load->view('album_view', $datos);
 	}
@@ -123,7 +124,7 @@ class Home extends CI_Controller {
 	public function contacto_get()
 	{
 		$datos['titulo'] = 'Taller de Ajedrez - Contacto';
-    $datos['current'] = 'Contacto';
+		$datos['current'] = 'Contacto';
 		$this->load->view('contacto_view', $datos);
 	}
 
@@ -145,7 +146,33 @@ class Home extends CI_Controller {
 	{
 		$datos['titulo'] = 'Taller de Ajedrez - Nueva Partida';
 		$datos['current'] = 'Nueva Partida';
+
+		if ($_POST) {
+			$this->guardar_archivo();
+		}
+
 		$this->load->view('admin/new_game', $datos);
+	}
+
+	private function guardar_archivo()
+	{
+		$mi_archivo = 'upload';
+		$config['upload_path'] = "assets/img/tooltips/";
+		//$config['file_name'] = "nombre_archivo";
+		$config['allowed_types'] = "jpg|png";
+		$config['max_size'] = "5000";
+		$config['max_width'] = "2000";
+		$config['max_height'] = "2000";
+
+		$this->load->library('upload', $config);
+
+		if (!$this->upload->do_upload($mi_archivo)) {
+			//*** ocurrio un error
+			echo $this->upload->display_errors();
+			return;
+		}
+
+		//var_dump($this->upload->data());
 	}
 
 	public function new_game_insert()
@@ -193,5 +220,4 @@ class Home extends CI_Controller {
 		$datos['current'] = 'Politicas de Privacidad';
 		$this->load->view('politicas_de_privacidad_view', $datos);
 	}
-
 }

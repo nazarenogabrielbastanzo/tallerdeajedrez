@@ -4,7 +4,7 @@ var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('menu').outerHeight();
 
-$(window).scroll(function(event){
+$(window).scroll(function(){
     didScroll = true;
 });
 
