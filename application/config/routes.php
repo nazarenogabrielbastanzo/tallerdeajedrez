@@ -27,7 +27,7 @@ $route['contacto']['GET'] = 'home/contacto_get';
 $route['contacto']['POST'] = 'home/contacto_get';
 
 $route['admin']['GET'] = 'home/admin_get';
-$route['admin']['POST'] = 'home/admin_get';
+$route['admin']['POST'] = 'home/admin_post';
 
 $route['panel']['GET'] = 'home/admin_post';
 $route['panel']['POST'] = 'home/admin_post';
@@ -49,3 +49,6 @@ $route['politicas-de-privacidad']['GET'] = 'home/politicas_de_privacidad';
 
 /* $route['nuevo-album']['GET'] = 'upload_files/formulario';
 $route['nuevo-album']['POST'] = 'upload_files/formulario'; */
+
+$route['nuevo-admin']['GET'] = 'home/registro_admin';
+$route['nuevo-admin']['POST'] = 'home/registro_admin';

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-if ( isset ( $_SESSION['admin'] ) ) :
+if ( isset ( $_SESSION['user'] ) ) :
     $this->load->view('header_view');
     if ( $this->FRM->nueva ( $_POST['frase'], $_POST['author'] ) ) :
 ?>

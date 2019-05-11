@@ -220,4 +220,11 @@ class Home extends CI_Controller
 		$datos['current'] = 'Politicas de Privacidad';
 		$this->load->view('politicas_de_privacidad_view', $datos);
 	}
+
+	public function registro_admin()
+	{
+		$datos['titulo'] = 'Taller de Ajedrez - Nuevo admin';
+		$datos['current'] = 'Nuevo Admin';
+		$this->load->view('admin/nuevo-admin', $datos);
+	}
 }

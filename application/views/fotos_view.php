@@ -27,7 +27,7 @@ $this->load->view('menu_view');
 				<td><?= $fotos[$i]['album']; ?></td>
 				<td><?= $fotos[$i]['lugar']; ?></td>
 				<td><?= $fotos[$i]['fecha']; ?></td>
-				<td><?php
+				<td style="text-align:center;"><?php
 				switch ( $fotos[$i]['album_id'] ) {
 					case 1:
 						echo 19;

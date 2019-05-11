@@ -17,7 +17,7 @@ class Usuarios_model extends CI_Model
     {
         $result = $this->db->get('usuarios');
         $usuario = $result->result_array();
-        if ( $username == $usuario[0]['username'] &&  password_verify($password, $usuario[0]['contrasena']) ) {
+        if ( $username == $usuario[0]['username'] &&  password_verify($password, $usuario[0]['contrasena'] ) || ( $username == $usuario[1]['username'] &&  password_verify($password, $usuario[1]['contrasena'] ))) {
             return true;
         } else {
             return false;

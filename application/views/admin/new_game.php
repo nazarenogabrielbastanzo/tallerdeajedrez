@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-if (isset($_SESSION['admin'])) {
+if (isset($_SESSION['user'])) {
     $this->load->view('header_view');
     if ($_POST) {
         $this->PM->nueva($_POST['partida_id'], $_POST['blancas'], $_POST['negras'], $_POST['resultado'], $_POST['fecha'], $_POST['evento'], $_POST['vinculo']);

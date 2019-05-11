@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-if (isset($_SESSION['admin'])):
+if (isset($_SESSION['user'])):
     $this->load->view('header_view');
     ?>
 [<a href="<?= base_url('cerrar-sesion') ?>">Cerrar Sesión</a> | <a href="<?php echo base_url('panel') ?>">Volver al Panel</a>]
