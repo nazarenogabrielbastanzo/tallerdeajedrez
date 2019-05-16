@@ -96,7 +96,8 @@ class Home extends CI_Controller
 		$datos['current'] = 'Partida';
 		$datos['partida'] = $this->PM->getOne($id);
 		$datos['games'] = $this->PM->getAllGames();
-		$this->load->view('partida_view', $datos);
+		$datos['id'] = $id;
+		$this->load->view('visor/partida_view', $datos);
 	}
 
 	public function album_get($id)
