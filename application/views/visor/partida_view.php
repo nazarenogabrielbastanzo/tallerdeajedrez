@@ -5,21 +5,19 @@ $this->load->view('header_view');
 $this->load->view('menu_view');
 ?>
 
-<div class="container">
+	<div class="container">
 
-	<div id="GameBoard"></div>
-	<div id="GameButtons"></div>
-	<div id="GameEvent"></div>
-	<div id="GameDate"></div>
-	<div id="GameWhite"></div>
-	<div id="GameBlack"></div>
-	<div id="GameResult"></div>
+		<div id="GameBoard"></div>
+		<div id="GameButtons"></div>
+		<div id="GameEvent"></div>
+		<div id="GameDate"></div>
+		<div id="GameWhite"></div>
+		<div id="GameBlack"></div>
+		<div id="GameResult"></div>
 
-</div>
+	</div>
 
-<script src="<?php echo base_url('assets/pgn4web/pgn4web.js'); ?>" type="text/javascript"></script>
-
-
+	<script src="<?php echo base_url('pgn4web.js'); ?>" type="text/javascript"></script>
 	<script>
 		SetPgnUrl("<?php echo base_url('assets/partidas/'); ?><?php echo $id; ?>.pgn");
 	</script>
