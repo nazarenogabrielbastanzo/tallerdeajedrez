@@ -7,6 +7,6 @@ Debajo las capturas de pantalla:
 
 Visor Anterior:
 ![Captura de pantalla del visor anterior](captura_tda_visor_anterior.png)
-<hr>
+
 Visor Nuevo:
 ![Captura de pantalla del visor nuevo](captura_tda_visor_nuevo.png)
