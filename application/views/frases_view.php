@@ -13,7 +13,7 @@ foreach ( $frase as $f ) :
         <div class="card">
             <div class="card-body">
                 <blockquote class="blockquote">
-                    <p class="mb-0">"<?= $f['frase']; ?>"</p>
+                    <p class="mb-0">"<?php echo $f['frase']; ?>"</p>
                     <footer class="blockquote-footer"><?= $f['autor']; ?></footer>
                 </blockquote>
             </div>

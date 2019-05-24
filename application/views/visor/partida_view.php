@@ -7,7 +7,7 @@ $this->load->view('menu_view');
 
 	<div class="container">
 
-		<div id="GameBoard"></div>
+		<div id="GameBoard" style="display: inline-block; border: 1px solid black;"></div>
 		<div id="GameButtons"></div>
 		<div id="GameEvent"></div>
 		<div id="GameDate"></div>
