@@ -11,7 +11,7 @@ class Home extends CI_Controller
 
 	public function index()
 	{
-		$datos['titulo'] = 'Taller de Ajedrez - Partidas - Fotos - Frases';
+		$datos['titulo'] = 'Taller de Ajedrez - Partidas - Torneos - Fotos - Frases';
 		$datos['current'] = 'Inicio';
 		$this->load->view('inicio_view', $datos);
 	}
@@ -227,5 +227,11 @@ class Home extends CI_Controller
 		$datos['titulo'] = 'Taller de Ajedrez - Nuevo admin';
 		$datos['current'] = 'Nuevo Admin';
 		$this->load->view('admin/nuevo-admin', $datos);
+	}
+
+	public function torneos_get() {
+		$datos['titulo'] = 'Taller de Ajedrez - Torneos';
+		$datos['current'] = 'Torneos';
+		$this->load->view('visor/torneos_view', $datos);
 	}
 }

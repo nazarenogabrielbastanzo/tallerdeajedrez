@@ -1,6 +1,4 @@
-<?php
-defined('BASEPATH') or exit('No direct script access allowed');
-?>
+<?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -36,8 +34,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	<?php 
 	?>
 	<link rel="stylesheet" href="https://rubenwardy.com/lichess_widgets/light.css" />
-	<?php 
-	?>
+<!-- CBR: -->
+	<link rel="stylesheet" type="text/css" href="https://pgn.chessbase.com/CBReplay.css" />
+<!-- :CBR -->
 	<script src="<?= base_url('assets/js/lichess_widgets.js') ?>"></script>
 
 	<?php 
@@ -72,7 +71,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	<?php 
 	?>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
+<!-- CBR: -->
+<script src="https://pgn.chessbase.com/cbreplay.js" type="text/javascript"></script>
+<!-- :CBR -->
 </head>
 
 <body>

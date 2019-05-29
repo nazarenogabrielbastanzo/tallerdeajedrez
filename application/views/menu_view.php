@@ -20,19 +20,24 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					<li class="menu nav-item order-2 <?php echo (isset($current) && $current == 'Partidas') ? 'active' : ''; ?>">
 						<a class="nav-link" href="<?php echo base_url('partidas/pagina-1'); ?>" rel="tag">Partidas</a>
 					</li>
-					<li class="menu nav-item order-3 <?php echo (isset($current) && $current == 'Fotos') ? 'active' : ''; ?>">
+					<!-- torneos: -->
+					<li class="menu nav-item order-3 <?php echo (isset($current) && $current == 'Torneos') ? 'active' : ''; ?>">
+						<a class="nav-link" href="<?php echo base_url('torneos'); ?>" rel="tag">Torneos</a>
+					</li>
+					<!-- :torneos -->
+					<li class="menu nav-item order-4 <?php echo (isset($current) && $current == 'Fotos') ? 'active' : ''; ?>">
 						<a class="nav-link" href="<?php echo base_url('fotos/pagina-1'); ?>" rel="tag">Fotos</a>
 					</li>
-					<li class="menu nav-item order-4 <?php echo (isset($current) && $current == 'Frases') ? 'active' : ''; ?>">
+					<li class="menu nav-item order-5 <?php echo (isset($current) && $current == 'Frases') ? 'active' : ''; ?>">
 						<a class="nav-link" href="<?php echo base_url('frases'); ?>" rel="tag">Frases</a>
 					</li>
-					<li class="menu nav-item order-5 <?php echo (isset($current) && $current == 'Celular') ? 'active' : ''; ?>">
+					<li class="menu nav-item order-6 <?php echo (isset($current) && $current == 'Celular') ? 'active' : ''; ?>">
 						<a class="nav-link" href="<?php echo base_url('dispositivos'); ?>">Dispositivos</a>
 					</li>
-					<li class="menu nav-item order-6 <?php echo (isset($current) && $current == 'Contacto') ? 'active' : ''; ?>">
+					<li class="menu nav-item order-7 <?php echo (isset($current) && $current == 'Contacto') ? 'active' : ''; ?>">
 						<a class="nav-link" href="javascript:void()" data-toggle="modal" data-target="#exampleModal">Contacto</a>
 					</li>
-					<li class="menu nav-item order-7 <?php echo (isset($current) && $current == 'Compartir') ? 'active' : ''; ?>" id="compartirWhatsApp">
+					<li class="menu nav-item order-8 <?php echo (isset($current) && $current == 'Compartir') ? 'active' : ''; ?>" id="compartirWhatsApp">
 						<a class="nav-link" href="javascript:void()" data-toggle="modal" data-target="#exampleModal1">Compartir</a>
 					</li>
 				</ul>

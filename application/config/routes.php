@@ -52,3 +52,5 @@ $route['nuevo-album']['POST'] = 'upload_files/formulario'; */
 
 $route['nuevo-admin']['GET'] = 'home/registro_admin';
 $route['nuevo-admin']['POST'] = 'home/registro_admin';
+
+$route['torneos']['GET'] = 'home/torneos_get';
