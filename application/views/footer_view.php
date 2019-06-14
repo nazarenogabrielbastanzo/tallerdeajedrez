@@ -131,11 +131,9 @@ if (isset($_GET['fbclid']) && !empty($_GET['fbclid'])) {
 <?php
 ?>
 
-<?php
-?>
+
 <script src="<?php echo base_url('assets/js/top-button.js'); ?>"></script>
-<?php
-?>
+
 
 <?php
 ?>
