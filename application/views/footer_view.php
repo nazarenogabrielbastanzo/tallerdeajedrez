@@ -94,12 +94,6 @@ if (isset($_GET['fbclid']) && !empty($_GET['fbclid'])) {
 
 <?php
 ?>
-<script src="<?= base_url('assets/js/script.js'); ?>"></script>
-<?php
-?>
-
-<?php
-?>
 <script>
   function KeyPress(e) {
     var evtobj = window.event ? event : e;

@@ -26,7 +26,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					</li>
 					<!-- :torneos -->
 					<li class="menu nav-item order-4 <?php echo (isset($current) && $current == 'Fotos') ? 'active' : ''; ?>">
-						<a class="nav-link" href="<?php echo base_url('fotos/pagina-1'); ?>" rel="tag">Fotos</a>
+						<a class="nav-link" href="<?php echo base_url('fotos'); ?>" rel="tag">Fotos</a>
 					</li>
 					<li class="menu nav-item order-5 <?php echo (isset($current) && $current == 'Frases') ? 'active' : ''; ?>">
 						<a class="nav-link" href="<?php echo base_url('frases'); ?>" rel="tag">Frases</a>

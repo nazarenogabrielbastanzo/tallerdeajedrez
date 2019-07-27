@@ -53,25 +53,10 @@ class Home extends CI_Controller
 		$this->load->view('resultados-busqueda_view', $datos);
 	}
 
-	public function fotos_get($pagina)
+	public function fotos_get()
 	{
 		$datos['titulo'] = 'Taller de Ajedrez - Fotos';
 		$datos['current'] = 'Fotos';
-		$datos['fotos'] = $this->FM->getAll($pagina);
-		$datos['photos'] = $this->FM->getAllFotos();
-		$datos['pagina'] = $pagina;
-
-		$totalAlbums = sizeof($datos['photos']);
-		$cantidadAlbumsPorPagina = sizeof($datos['fotos']);
-		$rango = $this->FM->getRango();
-		// Ver consulta SQL
-		$primera = $totalAlbums - ($pagina - 1) * $rango;
-		$ultima = $cantidadAlbumsPorPagina == $rango ? $totalAlbums - $pagina * $rango + 1 : 1;
-
-		$datos['totalAlbums'] = $totalAlbums;
-		$datos['primera'] = $primera;
-		$datos['ultima'] = $ultima;
-
 		$this->load->view('fotos_view', $datos);
 	}
 

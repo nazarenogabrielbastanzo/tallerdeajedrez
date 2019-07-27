@@ -16,6 +16,37 @@
 	<!-- CBR: -->
 	<link rel="stylesheet" type="text/css" href="https://pgn.chessbase.com/CBReplay.css" />
 	<!-- :CBR -->
+	<!-- Carousels -->
+<style>
+	.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: blue;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: blue;
+}
+.carousel-item > img {
+	max-width: 800px;
+}
+.carousel-inner img {
+  max-width: 750px;
+}
+</style>
+	<!-- Carousels -->
 	<script src="<?= base_url('assets/js/lichess_widgets.js') ?>"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108819279-1"></script>

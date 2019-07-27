@@ -12,14 +12,12 @@ $route['home']['GET'] = 'home/index';
 
 $route['partidas/pagina-(:num)']['GET'] = 'home/partidas_get/$1';
 // 27/03/2019:
-$route['fotos/pagina-(:num)']['GET'] = 'home/fotos_get/$1';
-$route['resultados-busqueda']['GET'] = 'home/resultados_busqueda_get'; // :01/01/2019
 $route['fotos']['GET'] = 'home/fotos_get';
+$route['resultados-busqueda']['GET'] = 'home/resultados_busqueda_get'; // :01/01/2019
 $route['frases']['GET'] = 'home/frases_get';
 $route['dispositivos']['GET'] = 'home/dispositivos_get';
 // A donde dice (:any) podes usar (:num) todo depende del dato que recibas, si es un string o numero.
 $route['partida-(:num)']['GET'] = 'home/partida_get/$1';
-$route['album-(:num)']['GET'] = 'home/album_get/$1';
 $route['partidas-amistosas']['GET'] = 'home/partidas_amistosas_get';
 $route['partida-tringov-fischer']['GET'] = 'home/partida_tringov_fischer_get';
 
