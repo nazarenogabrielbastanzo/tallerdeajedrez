@@ -1,0 +1,10 @@
+application/views/admin/login.php
+application/views/admin/panel.php
+application/views/admin/nuevo-admin.php
+application/views/contacto_view.php
+application/config/tallerdeajedrez_actual.sql
+application/config/routes - copia (2).php
+application/config/routes - copia.php
+application/controllers/Home - copia.php
+application/views/fotos_view - copia.php
+application/views/menu_view - copia.php

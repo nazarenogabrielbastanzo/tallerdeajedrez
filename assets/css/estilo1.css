@@ -1,3 +1,12 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
 p {
     text-align: justify;
 }
@@ -123,6 +132,26 @@ a.nav-link:hover {
     #compartirWhatsApp {
         display: none;
     }
+    /* Para animar el cuadro de búsqueda */
+    input[type=search] {
+      width: 150px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-image: url('search.png');
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+    }
+
+    input[type=search]:focus {
+        width: 500px;
+    }
+    /**/
 }
 
 @media only screen and (max-device-width: 736px) and (orientation: portrait) {
@@ -133,6 +162,19 @@ a.nav-link:hover {
         content: 'Voltee su dispositivo... :)';
         visibility: visible;
     }
+    /* Para animar el cuadro de búsqueda */
+    input[type=search] {
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-image: url('search.png');
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+    }
+    /**/    
 }
 
 @media only screen and (max-device-width: 736px) and (orientation: landscape) {
@@ -150,4 +192,30 @@ a.nav-link:hover {
         width: 50%;
         height: 50%;
     }
+    /* Para animar el cuadro de búsqueda */
+    input[type=search] {
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-image: url('search.png');
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+    }
+    /**/    
 }
+
+/* Para hacer las fotos responsivas */
+div.divresponsivo {
+	width: 96%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+img.imgresponsiva {
+	width: 100%;
+	height: auto;
+}
+/**/

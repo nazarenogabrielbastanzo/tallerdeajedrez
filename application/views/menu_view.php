@@ -45,8 +45,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 				<?php
 				?>
 				<form class="form-inline my-2 my-lg-0" action="<?php echo base_url('resultados-busqueda'); ?>" method="GET">
-					<input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search" name="PalabraClave" autocomplete="off" required>
-					<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
+					<input type="search" placeholder="Buscar..." aria-label="Search" name="PalabraClave" autocomplete="off" required>
 				</form>
 				<?php
 				?>

@@ -13,6 +13,7 @@ $route['home']['GET'] = 'home/index';
 $route['partidas/pagina-(:num)']['GET'] = 'home/partidas_get/$1';
 // 27/03/2019:
 $route['fotos']['GET'] = 'home/fotos_get';
+$route['fotos/(:num)'] = 'home/fotos2_get/$1';
 $route['resultados-busqueda']['GET'] = 'home/resultados_busqueda_get'; // :01/01/2019
 $route['frases']['GET'] = 'home/frases_get';
 $route['dispositivos']['GET'] = 'home/dispositivos_get';
@@ -52,3 +53,4 @@ $route['nuevo-admin']['GET'] = 'home/registro_admin';
 $route['nuevo-admin']['POST'] = 'home/registro_admin';
 
 $route['torneos']['GET'] = 'home/torneos_get';
+$route['estudios']['GET'] = 'home/estudios_get';

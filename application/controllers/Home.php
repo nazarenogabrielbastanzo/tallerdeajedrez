@@ -60,6 +60,14 @@ class Home extends CI_Controller
 		$this->load->view('fotos_view', $datos);
 	}
 
+	public function fotos2_get($id)
+	{
+		$datos['titulo'] = 'Taller de Ajedrez - Fotos';
+		$datos['current'] = 'Fotos del Álbum ' . $id;
+		$datos['id'] = $id;
+		$this->load->view('fotos2_view', $datos);
+	}
+
 	public function frases_get()
 	{
 		$datos['titulo'] = 'Taller de Ajedrez - Frases';

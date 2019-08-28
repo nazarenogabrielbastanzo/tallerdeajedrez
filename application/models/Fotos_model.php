@@ -9,12 +9,13 @@ class Fotos_model extends CI_Model
     }
 
     public function getRango() {
+      // Cantidad de fotos a mostrar por página.
         return 7;
     }
 
     public function getAll($pagina) 
     {
-      $rango = $this->getRango(); // Cantidad de fotos a mostrar por página.
+      $rango = $this->getRango(); 
       $result1 = $this->db->query('SELECT * FROM albums');
       $fotos1 = $result1->result_array();
       $offset = ($pagina > 0 && $pagina < sizeof($fotos1)) ? (($pagina * $rango) - $rango) : (sizeof($fotos1));

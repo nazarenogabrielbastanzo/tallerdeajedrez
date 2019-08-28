@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="<?= base_url('assets/css/estilo1.css'); ?>" />
-	<link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>" />
 	<link rel="stylesheet" href="https://rubenwardy.com/lichess_widgets/lichess_widgets.css" />
 	<link rel="stylesheet" href="https://rubenwardy.com/lichess_widgets/light.css" />
 	<!-- CBR: -->
@@ -18,7 +17,8 @@
 	<!-- :CBR -->
 	<!-- Carousels -->
 <style>
-	.carousel-control-prev-icon,
+	/* Para personalizar las flechas del carousel de fotos */
+	/*.carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 100px;
   width: 100px;
@@ -44,7 +44,8 @@
 }
 .carousel-inner img {
   max-width: 750px;
-}
+}*/
+/**/
 </style>
 	<!-- Carousels -->
 	<script src="<?= base_url('assets/js/lichess_widgets.js') ?>"></script>
