@@ -50,3 +50,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 		</nav>
 	</menu>
+	<div class="text-center">
+    <div class="custom-control custom-switch">
+      <input type="checkbox" class="custom-control-input" id="pantallaCompleta">
+      <label class="custom-control-label" for="pantallaCompleta">Pantalla Completa</label>
+    </div>
+		<div class="custom-control custom-switch">
+      <input type="checkbox" class="custom-control-input" id="ocultarMenu">
+      <label class="custom-control-label" for="ocultarMenu">Ocultar Menu</label>
+    </div>
+  </div>
+  

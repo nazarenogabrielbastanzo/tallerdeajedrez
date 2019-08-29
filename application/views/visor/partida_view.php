@@ -6,10 +6,6 @@ $this->load->view('menu_view');
 ?>
 <div class="container-fluid">
   <h4>Partida <?php echo $id;?></h4>
-  <div class="text-center">
-    <button onclick="removerMenu()" class="btn btn-outline-primary">Ocultar Menu</button>
-    <button onclick="mostrarMenu()" class="btn btn-outline-primary">Mostrar Menu</button>
-  </div>
   <div class="visor2">
     <div class="container">
 
