@@ -12,8 +12,6 @@ if (isset($_GET['fbclid']) && !empty($_GET['fbclid'])) {
 
 ?>
 
-<?php
-?>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -34,11 +32,7 @@ if (isset($_GET['fbclid']) && !empty($_GET['fbclid'])) {
     </div>
   </div>
 </div>
-<?php
-?>
 
-<?php
-?>
 <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -61,18 +55,12 @@ if (isset($_GET['fbclid']) && !empty($_GET['fbclid'])) {
     </div>
   </div>
 </div>
-<?php
-?>
 
-<?php
-?>
 <div class="container">
   <div class="row justify-content-end">
     <button class="btn btn-outline-primary" id="boton-top">Ir arriba</button>
   </div>
 </div>
-<?php
-?>
 
 <footer>
   <div class="py-5">
@@ -82,18 +70,9 @@ if (isset($_GET['fbclid']) && !empty($_GET['fbclid'])) {
   </div>
 </footer>
 
-<?php
-?>
-
-<?php
-?>
-<?php
-?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-<?php
-?>
 <script>
   function KeyPress(e) {
     var evtobj = window.event ? event : e;
@@ -116,21 +95,10 @@ if (isset($_GET['fbclid']) && !empty($_GET['fbclid'])) {
 
   document.onkeydown = KeyPress;
 </script>
-<?php
-?>
-
-<?php
-?>
 <script src="<?php echo base_url('assets/js/hide_menu.js'); ?>"></script>
-<?php
-?>
-
 
 <script src="<?php echo base_url('assets/js/top-button.js'); ?>"></script>
 
-
-<?php
-?>
 <?php if (isset($current) && $current == 'Inicio') : ?>
   <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@4.0.0/dist/simpleParallax.min.js"></script>
   <script>
@@ -138,21 +106,11 @@ if (isset($_GET['fbclid']) && !empty($_GET['fbclid'])) {
     new simpleParallax(parallaxImages);
   </script>
 <?php endif; ?>
-<?php
-?>
-
-<?php
-?>
 <script>
   $(function() {
     $('[data-toggle="tooltip"]').tooltip();
   });
 </script>
-<?php
-?>
-
-<?php
-?>
 
 </body>
 
