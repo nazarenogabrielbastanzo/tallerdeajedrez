@@ -112,6 +112,17 @@ if (isset($_GET['fbclid']) && !empty($_GET['fbclid'])) {
   });
 </script>
 
+<?php if (isset($current) && $current == 'Partida') : ?>
+  <script type="text/javascript">
+    function removerMenu() {
+      $('menu').hide('slow');
+    }
+    function mostrarMenu() {
+      $('menu').show('slow');
+    }
+  </script>
+<?php endif; ?>
+
 </body>
 
 </html>

@@ -136,7 +136,7 @@ a.nav-link:hover {
     input[type=search] {
       width: 150px;
       box-sizing: border-box;
-      border: 2px solid #ccc;
+      border: 1px solid #007bff;
       border-radius: 4px;
       font-size: 16px;
       background-color: white;
@@ -165,7 +165,7 @@ a.nav-link:hover {
     /* Para animar el cuadro de búsqueda */
     input[type=search] {
       box-sizing: border-box;
-      border: 2px solid #ccc;
+      border: 1px solid #007bff;
       border-radius: 4px;
       font-size: 16px;
       background-color: white;
@@ -195,7 +195,7 @@ a.nav-link:hover {
     /* Para animar el cuadro de búsqueda */
     input[type=search] {
       box-sizing: border-box;
-      border: 2px solid #ccc;
+      border: 1px solid #007bff;
       border-radius: 4px;
       font-size: 16px;
       background-color: white;
