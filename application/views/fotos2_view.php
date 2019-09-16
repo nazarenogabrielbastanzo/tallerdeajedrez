@@ -5,20 +5,22 @@ $this->load->view('menu_view');
 $data = file_get_contents(base_url('assets/fotos.json'));
 $fotos = json_decode($data, true);
 ?>
-<h4><?php echo $current; ?></h4>
-<div class="d-flex justify-content-center">
-	<div id="carouselExampleControls<?php echo $id; ?>" class="carousel slide" data-ride="carousel">
-	  <div class="carousel-inner <?php echo $id; ?>">
-	    <!-- Se inserta mediante script de jQuery -->
-	  </div>
-	  <a class="carousel-control-prev" href="#carouselExampleControls<?php echo $id; ?>" role="button" data-slide="prev">
-	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Anterior</span>
-	  </a>
-	  <a class="carousel-control-next" href="#carouselExampleControls<?php echo $id; ?>" role="button" data-slide="next">
-	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	    <span class="sr-only">Siguiente</span>
-	  </a>
+<div class="container" style="margin-top: 150px;">
+	<h4 style="text-align: center;"><?php echo $current; ?></h4>
+	<div class="d-flex justify-content-center">
+		<div id="carouselExampleControls<?php echo $id; ?>" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner <?php echo $id; ?>">
+		    <!-- Se inserta mediante script de jQuery -->
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleControls<?php echo $id; ?>" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Anterior</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleControls<?php echo $id; ?>" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Siguiente</span>
+		  </a>
+		</div>
 	</div>
 </div>
 <script>

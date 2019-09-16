@@ -4,11 +4,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $this->load->view('header_view');
 $this->load->view('menu_view');
 ?>
-<section class="container-fluid mt-3">
-	<h4><?php echo $current; ?></h4>
-	<h5>Partidas (<?php echo (isset($resultadosPartidas)) ? sizeof($resultadosPartidas) : '0'; ?>)</h5>
+<section class="container-fluid"
+	style="margin-top: 150px; background-color: white;">
+	<h4 style="text-align: center;"
+		class="mb-5">
+		<?php echo $current; ?>
+	</h4>
+	<h5 style="text-align: center;"
+		class="mb-5">
+		Partidas (<?php echo (isset($resultadosPartidas)) ? sizeof($resultadosPartidas) : '0'; ?>)
+	</h5>
 <?php if (isset($resultadosPartidas)): ?>
-<br>
 	<div class="table-responsive">
 		<table class="table table-bordered table-hover">
 			<thead>
@@ -22,7 +28,8 @@ $this->load->view('menu_view');
 			</thead>
 			<tbody class="BusquedaRapida">
 <?php for ( $i = 0; $i < sizeof($resultadosPartidas); $i++ ): ?>
-			<tr style="cursor: pointer;" onclick="window.location.assign('<?= base_url('partida-' . $resultadosPartidas[$i]['partida_id']); ?>');" data-toggle="tooltip" data-html="true" title="<img src='<?= base_url('assets/img/tooltips/'.$resultadosPartidas[$i]['partida_id'].'.png') ?>' width='150'>">
+			<tr style="cursor: pointer;"
+				onclick="window.location.assign('<?= base_url('partida-' . $resultadosPartidas[$i]['partida_id']); ?>');">
 				<td><?= $resultadosPartidas[$i]['blancas']; ?></td>
 				<td><?= $resultadosPartidas[$i]['negras']; ?></td>
 				<td><?= $resultadosPartidas[$i]['resultado']; ?></td>
@@ -43,10 +50,14 @@ $this->load->view('menu_view');
 	</div>
 </section>
 
-<section class="container-fluid mt-3">
-<h5>Fotos (<?php echo (isset($resultadosFotos)) ? sizeof($resultadosFotos) : '0'; ?>)</h5>
+<section class="container-fluid"
+	style="background-color: white;"
+	class="my-5">
+<h5 style="text-align: center;"
+	class="mb-5">
+	Fotos (<?php echo (isset($resultadosFotos)) ? sizeof($resultadosFotos) : '0'; ?>)
+</h5>
 <?php if (isset($resultadosFotos)): ?>
-<br>
 	<div class="table-responsive">
 		<table class="table table-bordered table-hover">
 			<thead>
@@ -58,7 +69,7 @@ $this->load->view('menu_view');
 			</thead>
 			<tbody class="BusquedaRapida">
 <?php for ( $i = 0; $i < sizeof($resultadosFotos); $i++ ): ?>
-			<tr style="cursor: pointer;" onclick="window.location.assign('<?php echo base_url('album-' . $resultadosFotos[$i]['album_id']); ?>');">
+			<tr style="cursor: pointer;" onclick="window.location.assign('<?php echo base_url('fotos/' . $resultadosFotos[$i]['album_id']); ?>');">
 				<td><?= $resultadosFotos[$i]['album']; ?></td>
 				<td><?= $resultadosFotos[$i]['lugar']; ?></td>
 				<td><?= $resultadosFotos[$i]['fecha']; ?></td>
@@ -77,10 +88,13 @@ $this->load->view('menu_view');
 	</div>
 </section>
 
-<section class="container-fluid mt-3">
-<h5>Frases (<?php echo (isset($resultadosFrases)) ? sizeof($resultadosFrases) : '0'; ?>)</h5>
+<section class="container-fluid"
+	style="background-color: white;">
+<h5 style="text-align: center;"
+	class="mb-5">
+	Frases (<?php echo (isset($resultadosFrases)) ? sizeof($resultadosFrases) : '0'; ?>)
+</h5>
 <?php if (isset($resultadosFrases)): ?>
-<br>
 	<div class="table-responsive">
 		<table class="table table-bordered table-hover">
 			<thead>

@@ -4,50 +4,44 @@
 
 <head>
 	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="shortcut icon" href="<?php echo base_url('assets/images/logo2-50x65.png'); ?>" type="image/x-icon">
 	<title><?= $titulo ?></title>
-	<link rel="shortcut icon" href="<?php echo base_url('favicon.ico'); ?>" type="image/x-icon">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="<?php echo base_url('assets/web/assets/mobirise-icons2/mobirise2.css'); ?>">
+	<link rel="stylesheet" href="<?php echo base_url('assets/web/assets/mobirise-icons/mobirise-icons.css'); ?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/tether/tether.min.css'); ?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css'); ?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap-grid.min.css'); ?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap-reboot.min.css'); ?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/dropdown/css/style.css'); ?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/socicon/css/styles.css'); ?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/animatecss/animate.min.css'); ?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/theme/css/style.css'); ?>">
+  <link rel="stylesheet" href="<?php echo base_url('assets/mobirise/css/mbr-additional.css'); ?>" type="text/css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<link rel="stylesheet" href="<?= base_url('assets/css/estilo1.css'); ?>" />
 	<link rel="stylesheet" href="https://rubenwardy.com/lichess_widgets/lichess_widgets.css" />
 	<link rel="stylesheet" href="https://rubenwardy.com/lichess_widgets/light.css" />
 	<!-- CBR: -->
 	<link rel="stylesheet" type="text/css" href="https://pgn.chessbase.com/CBReplay.css" />
 	<!-- :CBR -->
-	<!-- Carousels -->
-<style>
-	/* Para personalizar las flechas del carousel de fotos */
-	/*.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  background-image: none;
-}
 
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: blue;
-}
+	<style media="screen">
+		/* Para hacer las fotos responsivas */
+		div.divresponsivo {
+			width: 96%;
+			max-width: 960px;
+			margin: 0 auto;
+		}
 
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: blue;
-}
-.carousel-item > img {
-	max-width: 800px;
-}
-.carousel-inner img {
-  max-width: 750px;
-}*/
-/**/
-</style>
-	<!-- Carousels -->
+		img.imgresponsiva {
+			width: 100%;
+			height: auto;
+		}
+		/**/
+	</style>
+
 	<script src="<?= base_url('assets/js/lichess_widgets.js') ?>"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108819279-1"></script>
@@ -65,13 +59,7 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo base_url('assets/js/html5shiv.js'); ?>"></script>
 <![endif]-->
-	<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-	<!-- CBR: -->
-	<script src="https://pgn.chessbase.com/cbreplay.js" type="text/javascript"></script>
-	<!-- :CBR -->
+	<script src="<?php echo base_url('assets/web/assets/jquery/jquery.min.js'); ?>"></script>
 </head>
 
 <body>

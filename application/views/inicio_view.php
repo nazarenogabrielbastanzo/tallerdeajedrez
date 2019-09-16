@@ -5,113 +5,98 @@ $this->load->view('header_view');
 $this->load->view('menu_view');
 $this->load->view('carousel_view');
 ?>
-</header>
-<section class="container-fluid mt-3">
-	<div class="card-columns">
-		<?php
-		?>
-		<article class="card border-primary">
-			<div class="contenedor-imagen" onclick="location.href='<?= base_url('partidas-amistosas'); ?>';">
-				<img src="<?= base_url('assets/img/jorgeraulbastanzo.jpg'); ?>" alt="Card image cap" title="Ver mas...">
-			</div>
-			<div class="card-body">
-				<h4 class="card-title">Partidas Amistosas</h4>
-				<p class="card-text">Muchas son las ocasiones en las que se pueden jugar partidas amistosas de ajedrez: entre ronda y ronda de un torneo, antes o después de un torneo, en casa, en la plaza, en el tren, y un largo etcétera...</p>
-				<div class="text-center">
-					<div class="btn btn-outline-primary" onclick="location.href='<?= base_url('partidas-amistosas'); ?>';">Seguir leyendo</div>
+
+<section class="features15 cid-rBU07jC8rl" id="features15-3">
+	<div class="container">
+		<div class="media-container-row container pt-5 mt-2">
+			<div class="col-12 col-md-6 mb-4 col-lg-3">
+				<div class="card flip-card p-5 align-center">
+					<div class="card-front card_cont">
+						<img src="<?= base_url('assets/img/jorgeraulbastanzo.jpg'); ?>"
+							alt="Mobirise"
+							style="width: 100%;">
+					</div>
+					<div class="card_back card_cont">
+						<h4 class="card-title display-5 py-2 mbr-fonts-style">
+							Partidas Amistosas
+						</h4>
+						<p class="mbr-text mbr-fonts-style display-7">
+							Muchas son las ocasiones en las que se pueden jugar partidas amistosas de ajedrez...
+						</p>
+						<a href="<?= base_url('partidas-amistosas'); ?>"
+							class="btn btn-outline-primary">
+							Más...
+						</a>
+					</div>
 				</div>
 			</div>
-		</article>
-		<?php
-		?>
-		<article class="card border-primary">
-			<div class="contenedor-imagen" onclick="location.href='<?= base_url('partida-tringov-fischer') ?>';">
-				<img class="card-img-top" src="<?= base_url('assets/img/Tringov_Fischer_Diagrama1.jpg'); ?>" alt="Card image cap" title="Ver mas...">
-			</div>
-			<div class="card-body">
-				<h4 class="card-title">Partida Tringov vs. Fischer</h4>
-				<p class="card-text">Tringov vs. Fischer, Capablanca Memorial (1965): Esta partida tiene una curiosa historia, se jugó por teletipo ya que las autoridades de Estados Unidos no le permitieron a Fischer viajar a La Habana a jugar el torneo...</p>
-				<div class="text-center">
-					<div class="btn btn-outline-primary" onclick="location.href='<?= base_url('partida-tringov-fischer') ?>';">Seguir leyendo</div>
+			<div class="col-12 col-md-6 mb-4 col-lg-3">
+				<div class="card flip-card p-5 align-center">
+					<div class="card-front card_cont">
+						<img src="<?= base_url('assets/img/Tringov_Fischer_Diagrama1.jpg'); ?>"
+							alt="Mobirise"
+							style="width: 100%;">
+					</div>
+					<div class="card_back card_cont">
+						<h4 class="card-title py-2 mbr-fonts-style display-5">
+							Partida Tringov vs. Fischer
+						</h4>
+						<p class="mbr-text mbr-fonts-style display-7">
+							Tringov vs. Fischer, Capablanca Memorial (1965): Esta partida...
+						</p>
+						<a href="<?= base_url('partida-tringov-fischer') ?>"
+							class="btn btn-outline-primary">
+							Más...
+						</a>
+					</div>
 				</div>
 			</div>
-		</article>
-		<?php
-		?>
-		<article class="card border-primary">
-			<div class="card-body">
-				<h4 class="card-title">
-					Taller de Ajedrez en Lichess
-				</h4>
-				<script>
-					lichess_widgets.profile_big("light", "tallerdeajedrez", "Mi Lichess");
-				</script>
-			</div>
-		</article>
-		<?php
-		?>
-		<article class="card border-primary">
-			<div class="contenedor-imagen" onclick="location.href='<?= base_url('funcionalidades'); ?>';">
-				<img src="<?= base_url('assets/img/screenshots'); ?>/captura.png" alt="Card image cap" title="Ver mas...">
-			</div>
-			<div class="card-body">
-				<h4 class="card-title">Funcionalidades</h4>
-				<p class="card-text">Ahora se puede hacer, con el teclado, en cualquier página de este sitio: ...</p>
-				<div class="text-center">
-					<div class="btn btn-outline-primary" onclick="location.href='<?= base_url('funcionalidades'); ?>';">Seguir leyendo</div>
+			<div class="col-12 col-md-6 mb-4 col-lg-3">
+				<div class="card flip-card p-5 align-center">
+					<div class="card-front card_cont">
+						<img src="<?= base_url('assets/img/Ctrl_Z.jpg'); ?>"
+							alt="Mobirise"
+							style="width: 100%;">
+					</div>
+					<div class="card_back card_cont">
+						<h4 class="card-title py-2 mbr-fonts-style display-5">
+							Funciones
+						</h4>
+						<p class="mbr-text mbr-fonts-style display-7">
+							Ahora se puede hacer, con el teclado, en cualquier página de este sitio...
+						</p>
+						<a href="<?= base_url('funcionalidades'); ?>"
+							class="btn btn-outline-primary">
+							Más...
+						</a>
+					</div>
 				</div>
 			</div>
-		</article>
-		<?php
-		?>
-		<article class="card border-primary">
-			<div class="card-body">
-				<h4 class="card-title">chess24 Noticias</h4>
-				<?php
-				function feed($feedURL)
-				{
-					$i = 0;
-					$url = $feedURL;
-					$rss = simplexml_load_file($url);
-					foreach ($rss->channel->item as $item) {
-						$link = $item->link;  //extrae el link
-						$title = $item->title;  //extrae el titulo
-						$date = $item->pubDate;  //extrae la fecha
-						$date = date("d/m/Y", strtotime($date)); //convierte la fecha cruda en fecha legible
-						//$guid = $item->guid;  //extrae el link de la imagen
-						$description = strip_tags($item->description);  //extrae la descripcion
-						if (strlen($description) > 400) { //limita la descripcion a 400 caracteres
-							$stringCut = substr($description, 0, 200);
-							$description = substr($stringCut, 0, strrpos($stringCut, ' ')) . '...';
-						}
-						if ($i < 3) { // extrae solo 3 items
-							//    	echo '<div class="cuadros1"><h4><a href="'.$link.'" target="_blank">'.$title.'</a></h4><br><img src="'.$guid.'"><br>'.$description.'<br><div class="time">'.$date.'</div></div>';
-							echo '<div><h6><a href="' . $link . '" target="_blank">' . $title . '</a></h6>' . $description . '<br><div class="time text-right">' . $date . '</div></div><br>';
-						}
-						$i++;
-					}
-					echo '<p class="text-center"><a href="https://chess24.com/es/informate/noticias" target="_blank">Más noticias de ajedrez en chess24</a></p>';
-					//echo '<div style="clear: both;"></div>';
-				}
-				?>
-				<?php feed("https://chess24.com/es/informate/noticias.rss"); ?>
-			</div>
-		</article>
-		<article class="card border-primary">
-			<div class="card-body">
-				<div class="fb-page" data-href="https://www.facebook.com/TallerDeAjedrez/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
-					<blockquote cite="https://www.facebook.com/TallerDeAjedrez/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/TallerDeAjedrez/">Taller de Ajedrez</a></blockquote>
+			<div class="col-12 col-md-6 mb-4 col-lg-3">
+				<div class="card flip-card p-5 align-center">
+					<div class="card-front card_cont">
+						<img src="<?= base_url('assets/img/noticias.jpg'); ?>"
+							alt="Mobirise"
+							style="width: 100%;">
+					</div>
+					<div class="card_back card_cont">
+						<h4 class="card-title py-2 mbr-fonts-style display-5">
+							Noticias
+						</h4>
+						<p class="mbr-text mbr-fonts-style display-7">
+							Últimas noticias de Ajedrez, de Chess24 . . .
+						</p>
+						<a href="<?= base_url('noticias'); ?>"
+							class="btn btn-outline-primary">
+							Más...
+						</a>
+					</div>
 				</div>
 			</div>
-		</article>
-		<article class="card border-primary">
-			<div class="card-body">
-				<a class="twitter-timeline" data-height="750" data-theme="light" href="https://twitter.com/TallerdeAjedre2?ref_src=twsrc%5Etfw">Tweets by TallerdeAjedre2</a>
-				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
-		</article>
+    </div>
 	</div>
 </section>
+
 <?php
 $this->load->view('footer_view')
 ?>

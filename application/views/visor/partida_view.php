@@ -1,11 +1,15 @@
+<?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
 <?php
-defined('BASEPATH') or exit('No direct script access allowed');
-
 $this->load->view('header_view');
 $this->load->view('menu_view');
 ?>
-<div class="container-fluid">
-  <h4>Partida <?php echo $id;?></h4>
+<div class="container-fluid" style="margin-top: 150px;">
+  <h4 style="text-align: center;"
+    class="mb-5">Partida <?php echo $id;?></h4>
+  <div class="custom-control custom-switch" style="text-align: center;">
+    <input type="checkbox" class="custom-control-input" id="ocultarMenu">
+    <label class="custom-control-label" for="ocultarMenu">Ocultar Menu</label>
+  </div>
   <div class="visor2">
     <div class="container">
 

@@ -4,9 +4,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $this->load->view('header_view');
 $this->load->view('menu_view');
 ?>
-	<section class="container mt-3">
-		<article>
-			<h4>Partidas Amistosas</h4>
+	<section class="container" style="margin-top: 150px; background-color: white;">
+			<h4 style="text-align: center;"
+			  class="mb-5">Partidas Amistosas</h4>
 			<p style="text-align: left;" class="articulo__descripcion">Muchas son las ocasiones en las que se pueden jugar partidas amistosas de ajedrez: entre ronda y ronda de un torneo, antes o después de un torneo, en casa, en la plaza, en el tren, y un largo etcétera... </p>
 			<div class="articulo__detalle">
 			<p style="text-align: justify;">
@@ -64,7 +64,7 @@ $this->load->view('menu_view');
 	</p>
 	<p>Artículo publicado el <time datetime="2017-02-28" pubdate>28 de Febrero de 2017</time>, por Taller de Ajedrez.</p>
 			</div>
-			</article>
+		</section>
 <?php
 $this->load->view('footer_view');
 ?>

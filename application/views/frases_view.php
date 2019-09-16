@@ -2,8 +2,8 @@
 $this->load->view('header_view');
 $this->load->view('menu_view');
 ?>
-<section class="container mt-3">
-  <h4>Frases</h4>
+<section class="container" style="margin-top: 150px; background-color: white;">
+  <h4 style="text-align: center;" class="mb-5">Frases</h4>
   <?php foreach ($frase as $f) : ?>
     <a name="<?= $f['frase_id']; ?>"></a>
     <div class="card shadow">

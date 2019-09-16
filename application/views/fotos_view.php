@@ -6,9 +6,9 @@ $this->load->view('menu_view');
 $data = file_get_contents(base_url('assets/fotos.json'));
 $fotos = json_decode($data, true);
 ?>
-<h4><?php echo $current; ?></h4>
-<?php foreach ($fotos as $foto) : ?>
-    <div class="container">
+    <div class="container" style="margin-top: 150px;">
+      <h4 style="text-align: center;"><?php echo $current; ?></h4>
+      <?php foreach ($fotos as $foto) : ?>
       <div class="my-5">
         <div class="card shadow">
           <div class="card-body">
@@ -23,8 +23,8 @@ $fotos = json_decode($data, true);
           </div>
         </div>
       </div>
+      <?php endforeach; ?>
     </div>
-  <?php endforeach; ?>
 <?php
 $this->load->view('footer_view');
 ?>

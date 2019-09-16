@@ -227,4 +227,18 @@ class Home extends CI_Controller
 		$datos['current'] = 'Torneos';
 		$this->load->view('visor/torneos_view', $datos);
 	}
+
+	public function noticias_get()
+	{
+		$datos['titulo'] = 'Taller de Ajedrez - Noticias';
+		$datos['current'] = 'Noticias';
+		$this->load->view('noticias_view', $datos);
+	}
+
+	public function buscar_get()
+	{
+		$datos['titulo'] = 'Taller de Ajedrez - Buscar';
+		$datos['current'] = 'Buscar';
+		$this->load->view('buscar_view', $datos);
+	}
 }

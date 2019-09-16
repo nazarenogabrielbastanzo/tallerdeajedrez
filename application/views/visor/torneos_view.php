@@ -3,11 +3,11 @@ $this->load->view('header_view');
 $this->load->view('menu_view');
 ?>
 
-<div class="container">
+<div class="container" style="margin-top: 150px;">
   <div class="my-5">
     <div class="card shadow">
       <div class="card-header">
-        <h4>FIDE World Cup 2019</h4>
+        <h4 style="text-align: center;">FIDE World Cup 2019</h4>
       </div>
       <div class="card-body">
         <div style="width:900px; height: 600px; margin: auto;">

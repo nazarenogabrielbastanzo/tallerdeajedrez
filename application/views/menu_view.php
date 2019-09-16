@@ -1,63 +1,76 @@
-<?php
-defined('BASEPATH') or exit('No direct script access allowed');
-?>
-<header>
-	<menu class="sticky-top">
-		<nav class="navbar navbar-expand-lg navbar-light bg-white">
-			<div class="menu">
-				<a href="<?php echo base_url(); ?>" class="navbar-brand" id="logotipo"><img src="<?php echo base_url('assets/img/Logo2.png'); ?>" alt="Logotipo de Taller de Ajedrez" class="rounded">&nbsp;Taller de Ajedrez</a>
+<?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
+<section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
+	<nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<div class="hamburger">
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		    <span></span>
 			</div>
-
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto text-center">
-					<li class="menu nav-item order-1 <?php echo (isset($current) && $current == 'Inicio') ? 'active' : ''; ?>">
-						<a class="nav-link" href="<?php echo base_url(); ?>">Inicio</a>
-					</li>
-					<li class="menu nav-item order-2 <?php echo (isset($current) && $current == 'Partidas') ? 'active' : ''; ?>">
-						<a class="nav-link" href="<?php echo base_url('partidas/pagina-1'); ?>" rel="tag">Partidas</a>
-					</li>
-					<!-- torneos: -->
-					<li class="menu nav-item order-3 <?php echo (isset($current) && $current == 'Torneos') ? 'active' : ''; ?>">
-						<a class="nav-link" href="<?php echo base_url('torneos'); ?>" rel="tag">Torneos</a>
-					</li>
-					<!-- :torneos -->
-					<li class="menu nav-item order-4 <?php echo (isset($current) && $current == 'Fotos') ? 'active' : ''; ?>">
-						<a class="nav-link" href="<?php echo base_url('fotos'); ?>" rel="tag">Fotos</a>
-					</li>
-					<li class="menu nav-item order-5 <?php echo (isset($current) && $current == 'Frases') ? 'active' : ''; ?>">
-						<a class="nav-link" href="<?php echo base_url('frases'); ?>" rel="tag">Frases</a>
-					</li>
-					<li class="menu nav-item order-6 <?php echo (isset($current) && $current == 'Celular') ? 'active' : ''; ?>">
-						<a class="nav-link" href="<?php echo base_url('dispositivos'); ?>">Dispositivos</a>
-					</li>
-					<li class="menu nav-item order-7 <?php echo (isset($current) && $current == 'Contacto') ? 'active' : ''; ?>">
-						<a class="nav-link" href="javascript:void()" data-toggle="modal" data-target="#exampleModal">Contacto</a>
-					</li>
-					<li class="menu nav-item order-8 <?php echo (isset($current) && $current == 'Compartir') ? 'active' : ''; ?>" id="compartirWhatsApp">
-						<a class="nav-link" href="javascript:void()" data-toggle="modal" data-target="#exampleModal1">Compartir</a>
-					</li>
-				</ul>
-
-				<form class="form-inline my-2 my-lg-0" action="<?php echo base_url('resultados-busqueda'); ?>" method="GET">
-					<input type="search" placeholder="Buscar..." aria-label="Search" name="PalabraClave" autocomplete="off" required>
-				</form>
-
-			</div>
-
-		</nav>
-	</menu>
-	<div class="text-center mb-3">
-    <div class="custom-control custom-switch">
-      <input type="checkbox" class="custom-control-input" id="pantallaCompleta">
-      <label class="custom-control-label" for="pantallaCompleta">Pantalla Completa</label>
-    </div>
-		<div class="custom-control custom-switch">
-      <input type="checkbox" class="custom-control-input" id="ocultarMenu">
-      <label class="custom-control-label" for="ocultarMenu">Ocultar Menu</label>
-    </div>
-  </div>
-  
+    </button>
+    <div class="menu-logo">
+    	<div class="navbar-brand">
+        <span class="navbar-logo">
+          <a href="<?php echo base_url(index_page()); ?>">
+            <img src="<?php echo base_url('assets/images/logo2-50x65.png'); ?>"
+							alt="Taller de Ajedrez"
+							title="Taller de Ajedrez"
+							style="height: 5.5rem;"
+							class="rounded">
+          </a>
+        </span>
+        <span class="navbar-caption-wrap">
+					<a class="navbar-caption text-primary display-5"
+						href="<?php echo base_url(); ?>">
+						Taller de Ajedrez
+					</a>
+				</span>
+      </div>
+		</div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    	<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+				<li class="nav-item">
+          <a class="nav-link link text-warning display-4" href="<?php echo base_url(index_page()); ?>">
+  					Inicio<br>
+					</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link text-warning display-4" href="<?php echo base_url('partidas/pagina-1'); ?>">
+            Partidas<br>
+					</a>
+        </li>
+				<li class="nav-item">
+					<a class="nav-link link text-warning display-4" href="<?php echo base_url('torneos'); ?>">
+          	Torneos<br>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link link text-warning display-4" href="<?php echo base_url('fotos'); ?>">
+						Fotos<br>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link link text-warning display-4" href="<?php echo base_url('frases'); ?>">
+            Frases<br>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link link text-warning display-4" href="<?php echo base_url('dispositivos'); ?>">
+						Dispositivos<br>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link link text-warning display-4" href="<?= base_url('contacto'); ?>">
+						Contacto<br>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link link text-warning display-4" href="<?= base_url('buscar'); ?>">
+						Buscar<br>
+					</a>
+				</li>
+			</ul>
+		</div>
+  </nav>
+</section>

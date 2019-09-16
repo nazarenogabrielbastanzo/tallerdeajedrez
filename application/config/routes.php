@@ -54,3 +54,6 @@ $route['nuevo-admin']['POST'] = 'home/registro_admin';
 
 $route['torneos']['GET'] = 'home/torneos_get';
 $route['estudios']['GET'] = 'home/estudios_get';
+
+$route['noticias']['GET'] = 'home/noticias_get';
+$route['buscar']['GET'] = 'home/buscar_get';

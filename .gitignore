@@ -8,3 +8,5 @@ application/config/routes - copia.php
 application/controllers/Home - copia.php
 application/views/fotos_view - copia.php
 application/views/menu_view - copia.php
+application\config\config(remoto).php
+application\config\database(remoto).php

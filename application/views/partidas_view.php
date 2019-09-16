@@ -1,18 +1,16 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-
 $this->load->view('header_view');
 $this->load->view('menu_view');
-
 ?>
 
-<section class="container-fluid mt-3">
-<h4>Partidas</h4>
+<section class="container-fluid" style="margin-top: 150px; background-color: white;">
+<h4 style="text-align: center;">Partidas</h4>
 <br>
 <?php $this->load->view('paginacion_partidas_view'); ?>
 	<p style="text-align: center;">Mostrando partidas <?php echo $primera; ?> a <?php echo $ultima; ?> de <?php echo $totalPartidas; ?></p>
 	<div class="table-responsive">
-		<table class="table table-bordered table-hover">
+		<table class="table table-bordered table-hover" style="zoom: 80%;">
 			<thead>
 				<tr>
 					<th style="text-align:right;">Blancas</th>
@@ -25,7 +23,9 @@ $this->load->view('menu_view');
 			</thead>
 			<tbody class="BusquedaRapida">
 <?php for ( $i = 0; $i < sizeof($partidas); $i++ ): ?>
-			<tr class="partida" style="cursor: pointer;" onclick="window.location.assign('<?php echo base_url('partida-' . $partidas[$i]['partida_id']); ?>');" data-toggle="tooltip" data-html="true" title="<img src='<?php echo base_url('assets/img/tooltips/'.$partidas[$i]['partida_id'].'.png') ?>' width='150'>">
+			<tr class="partida"
+				style="cursor: pointer;"
+				onclick="window.location.assign('<?php echo base_url('partida-' . $partidas[$i]['partida_id']); ?>');">
 				<td style="text-align:right;"><?php echo $partidas[$i]['blancas']; ?></td>
 				<td style="text-align:center;"><?php echo $partidas[$i]['resultado']; ?></td>
 				<td><?php echo $partidas[$i]['negras']; ?></td>
@@ -37,7 +37,7 @@ $this->load->view('menu_view');
 				</tbody>
 		</table>
 	</div>
-	<p style="text-align: center;">Mostrando partidas <?php echo $primera; ?> a <?php echo $ultima; ?> de <?php echo $totalPartidas; ?></p>	
+	<p style="text-align: center;">Mostrando partidas <?php echo $primera; ?> a <?php echo $ultima; ?> de <?php echo $totalPartidas; ?></p>
 <?php $this->load->view('paginacion_partidas_view'); ?>
 </section>
 
