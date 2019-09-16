@@ -4,6 +4,10 @@ $this->load->view('menu_view');
 ?>
 
 <div class="container" style="margin-top: 150px;">
+  <div class="custom-control custom-switch" style="text-align: center;">
+    <input type="checkbox" class="custom-control-input" id="ocultarMenu">
+    <label class="custom-control-label" for="ocultarMenu">Ocultar Menu</label>
+  </div>
   <div class="my-5">
     <div class="card shadow">
       <div class="card-header">

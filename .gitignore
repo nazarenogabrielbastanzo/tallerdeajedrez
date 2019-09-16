@@ -10,3 +10,4 @@ application/views/fotos_view - copia.php
 application/views/menu_view - copia.php
 application/config/config(remoto).php
 application/config/database(remoto).php
+assets/video/match_kasparov_vs_karpov_day_1_2_0_valencia_2009.mp4

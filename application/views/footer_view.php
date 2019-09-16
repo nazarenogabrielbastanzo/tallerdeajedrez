@@ -8,7 +8,8 @@ if (isset($_GET['fbclid']) && !empty($_GET['fbclid'])) {
   $this->VM->updateVisitas($visita);
 }
 ?>
-<section class="cid-qTkAaeaxX5" id="footer1-2">
+<section class="cid-qTkAaeaxX5"
+  id="footer1-2">
   <div class="container">
     <div class="media-container-row content text-white">
       <div class="col-12 col-md-3">
@@ -44,6 +45,8 @@ if (isset($_GET['fbclid']) && !empty($_GET['fbclid'])) {
   <script src="<?php echo base_url('assets/viewportchecker/jquery.viewportchecker.js'); ?>"></script>
   <script src="<?php echo base_url('assets/parallax/jarallax.min.js'); ?>"></script>
   <script src="<?php echo base_url('assets/mbr-flip-card/mbr-flip-card.js'); ?>"></script>
+  <script src="<?php echo base_url('assets/ytplayer/jquery.mb.ytplayer.min.js'); ?>"></script>
+  <script src="<?php echo base_url('assets/vimeoplayer/jquery.mb.vimeo_player.js'); ?>"></script>
   <script src="<?php echo base_url('assets/sociallikes/social-likes.js'); ?>"></script>
   <script src="<?php echo base_url('assets/touchswipe/jquery.touch-swipe.min.js'); ?>"></script>
   <script src="<?php echo base_url('assets/theme/js/script.js'); ?>"></script>

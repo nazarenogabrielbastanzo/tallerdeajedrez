@@ -6,7 +6,13 @@ $data = file_get_contents(base_url('assets/fotos.json'));
 $fotos = json_decode($data, true);
 ?>
 <div class="container" style="margin-top: 150px;">
-	<h4 style="text-align: center;"><?php echo $current; ?></h4>
+	<h4 style="text-align: center; margin-bottom: 25px;">
+		<?php echo $current; ?>
+	</h4>
+	<div class="custom-control custom-switch" style="text-align: center;">
+    <input type="checkbox" class="custom-control-input" id="ocultarMenu">
+    <label class="custom-control-label" for="ocultarMenu">Ocultar Menu</label>
+  </div>
 	<div class="d-flex justify-content-center">
 		<div id="carouselExampleControls<?php echo $id; ?>" class="carousel slide" data-ride="carousel">
 		  <div class="carousel-inner <?php echo $id; ?>">
@@ -21,6 +27,8 @@ $fotos = json_decode($data, true);
 		    <span class="sr-only">Siguiente</span>
 		  </a>
 		</div>
+	</div>
+	<div style="margin-top: 50px;">
 	</div>
 </div>
 <script>
