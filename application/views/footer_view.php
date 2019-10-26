@@ -27,7 +27,7 @@ if (isset($_GET['fbclid']) && !empty($_GET['fbclid'])) {
           &nbsp;
         </h5>
         <p class="mbr-text">
-          <a href="<?php echo base_url('politicas-de-privacidad'); ?>">
+          <a href="<?php echo base_url(index_page().'/politicas-de-privacidad'); ?>">
             Políticas de Privacidad
           </a>
         </p>

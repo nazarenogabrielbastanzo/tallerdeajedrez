@@ -60,7 +60,7 @@ $this->load->view('menu_view');
 		<b>- R: Buenísimo, con esto damos por terminada esta entrevista.</b>
 	</p>
 	<p>
-		<a href="<?= base_url('partida-1') ?>" title="Partida">Clic aquí para ver la partida completa</a>
+		<a href="<?= base_url(index_page().'/partida-1') ?>" title="Partida">Clic aquí para ver la partida completa</a>
 	</p>
 	<p>Artículo publicado el <time datetime="2017-02-28" pubdate>28 de Febrero de 2017</time>, por Taller de Ajedrez.</p>
 			</div>

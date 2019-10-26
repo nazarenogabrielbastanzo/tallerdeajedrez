@@ -9,7 +9,7 @@ $this->load->view('menu_view');
     class="mb-5">
     <?php echo $current; ?>
   </h4>
-  <form action="<?php echo base_url('resultados-busqueda'); ?>" method="GET">
+  <form action="<?php echo base_url(index_page().'/resultados-busqueda'); ?>" method="GET">
     <div class="input-group input-group-lg">
       <input type="search"
         class="form-control"

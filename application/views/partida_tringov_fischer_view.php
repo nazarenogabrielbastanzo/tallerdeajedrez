@@ -18,7 +18,7 @@ $this->load->view('menu_view');
 			<img src="<?= base_url('assets/img/Tringov_Fischer_Diagrama3.jpg'); ?>" alt="Diagrama 3" class="img-fluid rounded">
 			<p style="text-align: justify;">Fischer así refutó la teoría del momento y obligó a abandonar a su rival en un par de jugadas.</p>
 			<p>
-			<a href="<?= base_url('partida-47') ?>" title="Partida">Clic aquí para ver la partida completa</a>
+			<a href="<?= base_url(index_page().'/partida-47') ?>" title="Partida">Clic aquí para ver la partida completa</a>
 			</p>
 			<p>Artículo publicado el <time datetime="2017-02-26" pubdate>26 de Febrero de 2017</time>, por Taller de Ajedrez.</p>
 		</div>

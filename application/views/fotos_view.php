@@ -18,7 +18,7 @@ $fotos = json_decode($data, true);
             <p><b>Fecha: </b><?php echo $foto['fecha']; ?></p>
             <p><b>Cantidad de Fotos: </b><?php echo $foto['cantidadFotos']; ?></p>
             <div class="text-center">
-              <button class="btn btn-outline-primary" onclick="window.location.assign('<?php echo base_url('fotos') . '/' . $foto['album_id']; ?>');">Ver Fotos</button>
+              <button class="btn btn-outline-primary" onclick="window.location.assign('<?php echo base_url(index_page().'/fotos/').$foto['album_id']; ?>');">Ver Fotos</button>
             </div>
           </div>
         </div>

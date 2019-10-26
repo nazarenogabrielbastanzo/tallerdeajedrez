@@ -29,7 +29,7 @@ $this->load->view('carousel_view');
 						<p class="mbr-text mbr-fonts-style display-7">
 							Muchas son las ocasiones en las que se pueden jugar partidas amistosas de ajedrez . . .
 						</p>
-						<a href="<?= base_url('partidas-amistosas'); ?>"
+						<a href="<?= base_url(index_page().'/partidas-amistosas'); ?>"
 							class="btn btn-outline-primary">
 							Más...
 						</a>
@@ -50,7 +50,7 @@ $this->load->view('carousel_view');
 						<p class="mbr-text mbr-fonts-style display-7">
 							Tringov vs. Fischer, Capablanca Memorial (1965): Esta partida . . .
 						</p>
-						<a href="<?= base_url('partida-tringov-fischer') ?>"
+						<a href="<?= base_url(index_page().'/partida-tringov-fischer') ?>"
 							class="btn btn-outline-primary">
 							Más...
 						</a>
@@ -71,7 +71,7 @@ $this->load->view('carousel_view');
 						<p class="mbr-text mbr-fonts-style display-7">
 							Ahora se puede hacer, con el teclado, en cualquier página de este sitio . . .
 						</p>
-						<a href="<?= base_url('funcionalidades'); ?>"
+						<a href="<?= base_url(index_page().'/funcionalidades'); ?>"
 							class="btn btn-outline-primary">
 							Más...
 						</a>
@@ -92,7 +92,7 @@ $this->load->view('carousel_view');
 						<p class="mbr-text mbr-fonts-style display-7">
 							Últimas noticias de Ajedrez, de Chess24 . . .
 						</p>
-						<a href="<?= base_url('noticias'); ?>"
+						<a href="<?= base_url(index_page().'/noticias'); ?>"
 							class="btn btn-outline-primary">
 							Más...
 						</a>

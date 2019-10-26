@@ -25,7 +25,7 @@ $this->load->view('menu_view');
 <?php for ( $i = 0; $i < sizeof($partidas); $i++ ): ?>
 			<tr class="partida"
 				style="cursor: pointer;"
-				onclick="window.location.assign('<?php echo base_url('partida-' . $partidas[$i]['partida_id']); ?>');">
+				onclick="window.location.assign('<?php echo base_url(index_page().'/partida-' . $partidas[$i]['partida_id']); ?>');">
 				<td style="text-align:right;"><?php echo $partidas[$i]['blancas']; ?></td>
 				<td style="text-align:center;"><?php echo $partidas[$i]['resultado']; ?></td>
 				<td><?php echo $partidas[$i]['negras']; ?></td>
