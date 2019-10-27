@@ -1,4 +1,7 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
+<?php
+header('Set-Cookie: cross-site-cookie=name; SameSite=None; Secure');
+?>
 <!DOCTYPE html>
 <html lang="es">
 
