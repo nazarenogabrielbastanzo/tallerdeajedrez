@@ -20,7 +20,8 @@ class Busqueda_model extends CI_Model
       $resultado = $this->db->query($query);
       $busqueda = $resultado->result_array();
 
-      /* array_push($busqueda, $palabraClave); */
+      $palabraClave = array('PalabraClave' => $palabraClave);
+      array_push($busqueda, $palabraClave);
 
       return $busqueda;
     }
