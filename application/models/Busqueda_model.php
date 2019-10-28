@@ -7,7 +7,12 @@ class Busqueda_model extends CI_Model
 
     if (!empty($aKeyword[0])) {
       for($i = 0; $i < count($aKeyword); $i++) {
-        $query = "SELECT * FROM partidas WHERE blancas like '%{$aKeyword[$i]}%' OR negras like '%{$aKeyword[$i]}%' OR resultado like '%{$aKeyword[$i]}%' OR fecha like '%{$aKeyword[$i]}%' OR evento like '%{$aKeyword[$i]}%'";
+        $query = "SELECT * FROM partidas WHERE
+          blancas like '%{$aKeyword[$i]}%' OR
+          negras like '%{$aKeyword[$i]}%' OR
+          resultado like '%{$aKeyword[$i]}%' OR
+          fecha like '%{$aKeyword[$i]}%' OR
+          evento like '%{$aKeyword[$i]}%'";
       }
       
       $resultado = $this->db->query($query);
