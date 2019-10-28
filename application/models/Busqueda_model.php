@@ -5,7 +5,7 @@ class Busqueda_model extends CI_Model
   {
     $palabraClave = $_GET['PalabraClave'];
 
-    $aKeyword = explode(" ", $_GET['PalabraClave']);
+    $aKeyword = explode(" ", $palabraClave);
 
     if (!empty($aKeyword[0])) {
       for($i = 0; $i < count($aKeyword); $i++) {
@@ -20,7 +20,7 @@ class Busqueda_model extends CI_Model
       $resultado = $this->db->query($query);
       $busqueda = $resultado->result_array();
 
-      array_push($busqueda, $palabraClave);
+      /* array_push($busqueda, $palabraClave); */
 
       return $busqueda;
     }
