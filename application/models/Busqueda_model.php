@@ -20,7 +20,6 @@ class Busqueda_model extends CI_Model
       $resultado = $this->db->query($query);
       $busqueda = $resultado->result_array();
 
-      
       /* $busqueda = [
         [
           'partida_id' => 'partida_id',
@@ -63,7 +62,10 @@ class Busqueda_model extends CI_Model
 
     if (!empty($aKeyword[0])) {
       for($i = 0; $i < count($aKeyword); $i++) {
-        $query = "SELECT * FROM albums WHERE album like '%{$aKeyword[$i]}%' OR lugar like '%{$aKeyword[$i]}%' OR fecha like '%{$aKeyword[$i]}%'";
+        $query = "SELECT * FROM albums WHERE
+          album like '%{$aKeyword[$i]}%' OR
+          lugar like '%{$aKeyword[$i]}%' OR
+          fecha like '%{$aKeyword[$i]}%'";
       }
       
       $resultado = $this->db->query($query);
@@ -78,7 +80,9 @@ class Busqueda_model extends CI_Model
 
     if (!empty($aKeyword[0])) {
       for($i = 0; $i < count($aKeyword); $i++) {
-        $query = "SELECT * FROM frases WHERE frase like '%{$aKeyword[$i]}%' OR autor like '%{$aKeyword[$i]}%'";
+        $query = "SELECT * FROM frases WHERE
+          frase like '%{$aKeyword[$i]}%'
+          OR autor like '%{$aKeyword[$i]}%'";
       }
       
       $resultado = $this->db->query($query);

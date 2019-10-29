@@ -37,8 +37,6 @@ $this->load->view('menu_view');
 				<td><?php echo $resultadosPartidas[$i]['evento']; ?></td>
 			</tr>
 <?php endfor; ?>
-<?php /* echo $resultadosPartidas[sizeof($resultadosPartidas)-1][0]['PalabraClave']; */ ?>
-
 <?php endif; ?>
           	<tr>
               <td colspan="5">
