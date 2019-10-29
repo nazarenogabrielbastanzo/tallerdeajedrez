@@ -29,12 +29,12 @@ $this->load->view('menu_view');
 			<tbody class="BusquedaRapida">
 <?php for ( $i = 0; $i < sizeof($resultadosPartidas); $i++ ): ?>
 			<tr style="cursor: pointer;"
-				onclick="window.location.assign('<?= base_url('partida-' . $resultadosPartidas[$i]['partida_id']); ?>');">
-				<td><?= $resultadosPartidas[$i]['blancas']; ?></td>
-				<td><?= $resultadosPartidas[$i]['negras']; ?></td>
-				<td><?= $resultadosPartidas[$i]['resultado']; ?></td>
-				<td><?= $resultadosPartidas[$i]['fecha']; ?></td>
-				<td><?= $resultadosPartidas[$i]['evento']; ?></td>
+				onclick="window.location.assign('<?php echo base_url('partida-' . $resultadosPartidas[$i]['partida_id']); ?>');">
+				<td><?php echo $resultadosPartidas[$i]['blancas']; ?></td>
+				<td><?php echo $resultadosPartidas[$i]['negras']; ?></td>
+				<td><?php echo $resultadosPartidas[$i]['resultado']; ?></td>
+				<td><?php echo $resultadosPartidas[$i]['fecha']; ?></td>
+				<td><?php echo $resultadosPartidas[$i]['evento']; ?></td>
 			</tr>
 <?php endfor; ?>
 <?php /* echo $resultadosPartidas[sizeof($resultadosPartidas)-1][0]['PalabraClave']; */ ?>
@@ -72,9 +72,9 @@ $this->load->view('menu_view');
 			<tbody class="BusquedaRapida">
 <?php for ( $i = 0; $i < sizeof($resultadosFotos); $i++ ): ?>
 			<tr style="cursor: pointer;" onclick="window.location.assign('<?php echo base_url('fotos/' . $resultadosFotos[$i]['album_id']); ?>');">
-				<td><?= $resultadosFotos[$i]['album']; ?></td>
-				<td><?= $resultadosFotos[$i]['lugar']; ?></td>
-				<td><?= $resultadosFotos[$i]['fecha']; ?></td>
+				<td><?php echo $resultadosFotos[$i]['album']; ?></td>
+				<td><?php echo $resultadosFotos[$i]['lugar']; ?></td>
+				<td><?php echo $resultadosFotos[$i]['fecha']; ?></td>
 			</tr>
 <?php endfor; ?>
 <?php endif; ?>
@@ -108,8 +108,8 @@ $this->load->view('menu_view');
 			<tbody class="BusquedaRapida">
 <?php for ( $i = 0; $i < sizeof($resultadosFrases); $i++ ): ?>
 			<tr style="cursor: pointer;" onclick="window.location.assign('<?php echo base_url('frases#' . $resultadosFrases[$i]['frase_id']); ?>');">
-				<td><?= $resultadosFrases[$i]['frase']; ?></td>
-				<td><?= $resultadosFrases[$i]['autor']; ?></td>
+				<td><?php echo $resultadosFrases[$i]['frase']; ?></td>
+				<td><?php echo $resultadosFrases[$i]['autor']; ?></td>
 			</tr>
 <?php endfor; ?>
 <?php endif; ?>
