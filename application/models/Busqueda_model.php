@@ -18,40 +18,7 @@ class Busqueda_model extends CI_Model
       }
       
       $resultado = $this->db->query($query);
-      $busqueda = $resultado->result_array();
-
-      /* $busqueda = [
-        [
-          'partida_id' => 'partida_id',
-          'blancas' => 'resultadoblancas',
-          'negras' => 'resultadonegras',
-          'resultado' => 'resultadoresultado',
-          'fecha' => 'resultadofecha',
-          'evento' => 'resultadoevento'
-        ],
-        ...,
-        ..., etc.
-      ]; */
-
-      /* $palabraClave = array('PalabraClave' => $palabraClave); // ( $palabraClave = $_GET['PalabraClave'] )
-      array_push($busqueda, $palabraClave); */
-
-      /* $busqueda = [
-        [
-          'partida_id' => 'partida_id',
-          'blancas' => 'resultadoblancas',
-          'negras' => 'resultadonegras',
-          'resultado' => 'resultadoresultado',
-          'fecha' => 'resultadofecha',
-          'evento' => 'resultadoevento'
-        ],
-        ...,
-        ..., etc.,
-        [
-          'PalabraClave' => $palabraclave
-        ]
-      ]; */
-
+      $busqueda = $resultado->result_array();      
       return $busqueda;
     }
   }
