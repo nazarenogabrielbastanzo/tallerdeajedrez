@@ -39,6 +39,16 @@
 			width: 100%;
 			height: auto;
 		}
+		.nav-link:before {
+			content: "[ ";
+    		font-weight: bold;
+    		font-style: italic;
+		}
+		.nav-link:after {
+			content: " ]";
+    		font-weight: bold;
+    		font-style: italic;
+		}
 		/**/
 	</style>
 
