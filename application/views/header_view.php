@@ -43,11 +43,13 @@
 			content: "[ ";
     		font-weight: bold;
     		font-style: italic;
+			color: blue;
 		}
 		a.nav-link.link.text-primary.display-4:after {
 			content: " ]";
     		font-weight: bold;
     		font-style: italic;
+			color: blue;
 		}
 		/**/
 	</style>
