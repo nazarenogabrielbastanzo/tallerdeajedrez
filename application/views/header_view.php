@@ -39,12 +39,12 @@
 			width: 100%;
 			height: auto;
 		}
-		.nav-link:before {
+		a.nav-link.link.text-primary.display-4:before {
 			content: "[ ";
     		font-weight: bold;
     		font-style: italic;
 		}
-		.nav-link:after {
+		a.nav-link.link.text-primary.display-4:after {
 			content: " ]";
     		font-weight: bold;
     		font-style: italic;
