@@ -40,6 +40,15 @@
 			height: auto;
 		}
 		/**/
+		/* Efectos de los links del menu */
+		a.nav-link.link.text-primary.display-4 {
+			border-bottom: 3px solid rgba(0, 0, 0, 0.0);
+			transition: border-bottom .5s ease-in-out;
+		}
+		a.nav-link.link.text-primary.display-4:hover {
+			border-bottom: 3px solid rgba(0, 0, 255, 1.0);
+		}
+		/**/
 	</style>
 
 	<script src="<?= base_url('assets/js/lichess_widgets.js') ?>"></script>
