@@ -6,7 +6,7 @@ $this->load->view('menu_view');
 <section class="container" style="margin-top: 150px; background-color: white;">
   <h4 style="text-align: center;"
     class="mb-5"><?php echo $current; ?> Chess24</h4>
-  <?php
+<?php
 		function feed($feedURL)
 		{
 			$i = 0;
@@ -32,7 +32,7 @@ $this->load->view('menu_view');
 			echo '<p class="text-center"><a href="https://chess24.com/es/informate/noticias" target="_blank">Más noticias de ajedrez en chess24</a></p>';
 			//echo '<div style="clear: both;"></div>';
 		}
-		?>
-		<?php feed("https://chess24.com/es/informate/noticias.rss"); ?>
+?>
+<?php feed("https://chess24.com/es/informate/noticias.rss"); ?>
 </section>
 <?php $this->load->view('footer_view'); ?>
