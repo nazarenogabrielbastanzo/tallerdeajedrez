@@ -8,3 +8,8 @@ application/config/routes - copia.php
 application/controllers/Home - copia.php
 application/views/fotos_view - copia.php
 application/views/menu_view - copia.php
+application/config/config(remoto).php
+application/config/database(remoto).php
+application/controllers/Home2.php
+application/views/contacto_view(remoto).php
+assets/video/match_kasparov_vs_karpov_day_1_2_0_valencia_2009.mp4
