@@ -1,7 +1,6 @@
 application/views/admin/login.php
 application/views/admin/panel.php
 application/views/admin/nuevo-admin.php
-application/views/contacto_view.php
 application/views/contacto_view(remoto).php
 application/config/tallerdeajedrez_actual.sql
 application/config/routes - copia (2).php
@@ -9,9 +8,8 @@ application/config/routes - copia.php
 application/controllers/Home - copia.php
 application/views/fotos_view - copia.php
 application/views/menu_view - copia.php
-application/config/config.php
 application/config/config(remoto).php
-application/config/database.php
 application/config/database(remoto).php
 assets/video/match_kasparov_vs_karpov_day_1_2_0_valencia_2009.mp4
 assets/video/
+assets/partidas/seguir-desde.txt
