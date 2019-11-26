@@ -13,3 +13,4 @@ application/config/database(remoto).php
 assets/video/match_kasparov_vs_karpov_day_1_2_0_valencia_2009.mp4
 assets/video/
 assets/partidas/seguir-desde.txt
+application/controllers/Home2.php
