@@ -1,8 +1,8 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 $this->load->view('header_view');
 $this->load->view('menu_view');
-$titulo_del_torneo = '22nd ETCC Open 2019';
-$link_del_torneo = 'https://live.chessbase.com/pgn/22nd-etcc-open-2019/0';
+$titulo_del_torneo = 'FIDE Candidates 2020';
+$link_del_torneo = 'https://live.chessbase.com/pgn/fide-candidates-2020/0';
 ?>
 
 <div class="container" style="margin-top: 150px;">

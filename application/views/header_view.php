@@ -49,6 +49,10 @@
 			border-bottom: 3px solid rgba(0, 0, 255, 1.0);
 		}
 		/**/
+		.img-articulo {
+			width: 50%;
+			float: left;
+		}
 	</style>
 
 	<script src="<?= base_url('assets/js/lichess_widgets.js') ?>"></script>
